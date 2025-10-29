@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notopia</title>
+  <link rel="stylesheet" href="FormEducation.css" />
+  <link rel="stylesheet" href="../Header/Header.css">
+  <link rel="stylesheet" href="../Footer/Footer.css">
+  <link rel="icon" href="../images/icon.ico" type="image/x-image" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__sections">
+      <div class="header__sections__home section" onclick="GoToHomePage()">
+        خانه
+      </div>
+      <div class="header__sections__learn section" id="learnPart" onclick="GoToEducationPage()">
+        آموزش
+      </div>
+      <div class="header__sections__distances section" onclick="GoToDistancesPage()">
+        فواصل
+      </div>
+      <div class="header__sections__contact section" id="contactPart" onclick="GoToContactPage()">
+        ارتباط‌‌‌ با‌ما
+      </div>
+    </div>
+    <div class="header__logo">
+      <img src="../images/Notopia Logo.png" alt="Notopia Logo" class="header__logo__image" onclick="GoToHomePage()" />
+    </div>
+  </div>
+</body>
+<script src="FormEducation.js"></script>
+<script src="../Header/Header.js"></script>
+<script src="../Footer/Footer.js"></script>
+
+</html>
