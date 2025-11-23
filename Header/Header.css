@@ -1,0 +1,89 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    direction: ltr;
+    border-bottom: 1px solid rgb(156, 152, 152);
+    padding-bottom: 1vh;
+    padding-right: 0.5vw;
+    padding-top: 0.3vh;
+}
+
+.header__sections {
+    display: flex;
+    gap: 20%;
+    direction: rtl;
+    margin-left: auto;
+    margin-right: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+
+.header__logo {
+    width: 10vw;
+    margin-top: 0.7vw;
+    margin-right: 0.5vw;
+    margin-left: 3vw;
+}
+
+.header__logo__image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.section {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.section:hover {
+    color: orange;
+    font-size: larger;
+}
+
+/* ------------------------------------------------------------------- */
+@media(max-width: 700px) {
+    .header__sections {
+        font-size: 2.5vw;
+    }
+    .header__logo{
+        padding-right: 1vw;
+    }
+}
+@media(max-width: 1200px) and (min-width:500px){
+    .header__logo__image{
+        margin-top: 1vh;
+    }
+}
+@media(max-width: 500px) and (min-width:200px){
+    .header__sections{
+        gap:12%;
+    }
+    .header__logo{
+        width: 23vw;
+        margin-right: 2vw;
+    }
+    .header__logo__image{
+        margin-top: 1vh;
+    }
+    .header__sections{
+        font-size: 3.2vw;
+    }
+    .header{
+        height: 6vh;
+    }
+}
+@media(max-width: 900px) and (min-width:500px){
+    .header__logo{
+        width: 20vw;
+    }
+}
+@media (max-width:400px) {
+    .header{
+        height: 4vh;
+    }
+}
+/* ------------------------------------------------------------------- */
+.selectedDiv {
+    color: rgb(60, 255, 0);
+}
