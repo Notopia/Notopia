@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notopia</title>
+  <link rel="stylesheet" href="FormHome/FormHome.css" />
+  <link rel="stylesheet" href="Footer/Footer.css">
+  <link rel="icon" href="images/icon.ico" type="image/x-image" />
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 48vh;
+    }
+
+    button {
+      align-items: center;
+      justify-content: center;
+      font-size: xx-large;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__sections">
+      <div class="header__sections__home section" id="homePart" onclick="GoToHomePage()">
+        خانه
+      </div>
+      <div class="header__sections__learn section" onclick="GoToEducationPage()">
+        آموزش
+      </div>
+      <div class="header__sections__distances section" onclick="GoToDistancesPage()">
+        فواصل
+      </div>
+      <div class="header__sections__contact section" id="contactPart" onclick="GoToContactPage()">
+        ارتباط‌‌‌ با‌ما
+      </div>
+    </div>
+    <div class="header__logo">
+      <img src="images/Notopia Logo.png" alt="Notopia Logo" class="header__logo__image" onclick="GoToHomePage()" />
+    </div>
+  </div>
+  <button onclick="window.location.href='FormDistances/FormDistances.html'">P.J must click on this
+    button😂</button>
+</body>
+<script src="Footer/Footer.js"></script>
+<script src="FormHome/FormHome.js"></script>
+
+</html>

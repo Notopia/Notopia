@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head onload="AlwaysCheck()">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Notopia</title>
+	<link rel="stylesheet" href="FormDistances.css" />
+	<link rel="stylesheet" href="../Header/Header.css">
+	<link rel="stylesheet" href="../Footer/Footer.css">
+	<link rel="icon" href="../images/icon.ico" type="image/x-image" />
+</head>
+
+<body onload="AlwaysCheck()">
+	<div class="header" onclick="CnacelShowingAboutBox()" id="header">
+		<div class="header__sections">
+			<div class="header__sections__home section" onclick="GoToHomePage()">
+				خانه
+			</div>
+			<div class="header__sections__learn section" onclick="GoToEducationPage()">
+				آموزش
+			</div>
+			<div class="header__sections__distances section" id="distancesPart" onclick="GoToDistancesPage()">
+				فواصل
+			</div>
+			<div class="header__sections__contact section" onclick="GoToContactPage()">
+				ارتباط‌‌‌ با‌ما
+			</div>
+		</div>
+		<div class="header__logo">
+			<img src="../images/Notopia Logo.png" alt="Notopia Logo" class="header__logo__image"
+				onclick="GoToHomePage()" />
+		</div>
+	</div>
+	<div class="container" id="root">
+		<div class="aboutButton">
+			<button title="درباره بخش فواصل" type="button" id="aboutButton">
+				<svg id="cancelSVG" width="40px" height="40px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<title>about</title>
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="about-white" fill="#ff6a00" transform="translate(42.666667, 42.666667)">
+								<path
+									d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51168 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.154987,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51168 331.154987,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,384 C119.227947,384 42.6666667,307.43872 42.6666667,213.333333 C42.6666667,119.227947 119.227947,42.6666667 213.333333,42.6666667 C307.44,42.6666667 384,119.227947 384,213.333333 C384,307.43872 307.44,384 213.333333,384 Z M240.04672,128 C240.04672,143.46752 228.785067,154.666667 213.55008,154.666667 C197.698773,154.666667 186.713387,143.46752 186.713387,127.704107 C186.713387,112.5536 197.99616,101.333333 213.55008,101.333333 C228.785067,101.333333 240.04672,112.5536 240.04672,128 Z M192.04672,192 L234.713387,192 L234.713387,320 L192.04672,320 L192.04672,192 Z"
+									id="Shape"> </path>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</button>
+		</div>
+		<div class="main" onclick="CnacelShowingAboutBox()">
+			<div class="main__select">
+				<div class="main__select__space">
+					<div class="main__select_space_text text">فاصله</div>
+					<select title="space" class="main__select__space__box box" name="select1"
+						onchange="changeSelectOptions(),setThePicture()" id="selectDistance">
+						<option value="first">اول</option>
+						<option value="second">دوم</option>
+						<option value="third">سوم</option>
+						<option value="forth">چهارم</option>
+						<option value="fifth">پنجم</option>
+						<option value="sixth">ششم</option>
+						<option value="seventh">هفتم</option>
+						<option value="eighth">هشتم</option>
+					</select>
+				</div>
+				<div class="main__select__kind">
+					<div class="main__select_kind_text text">نوع</div>
+					<select title="kind" class="main__select__kind__box box" id="selectKind" onchange="setThePicture()">
+						<option value="little">کوچک</option>
+						<option value="completeOrBig">درست</option>
+						<option value="reduced">کاسته</option>
+						<option value="added">افزوده</option>
+					</select>
+				</div>
+			</div>
+			<div class="main__result">
+				<img alt="Result" class="main__result__image" id="resultImage" />
+			</div>
+		</div>
+	</div>
+	<div class="main__about main__about__hide" id="aboutBox">
+		<div class="main__about__top">
+			<button title="Cancel" id="aboutBoxCancelButton" onclick="CnacelShowingAboutBox()">
+				<svg width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<defs>
+							<style>
+								.cls-1 {
+									fill: none;
+									stroke: #ff0000;
+									stroke-linecap: round;
+									stroke-linejoin: round;
+									stroke-width: 2px;
+								}
+							</style>
+						</defs>
+						<title></title>
+						<g id="cross">
+							<line class="cls-1" x1="7" x2="25" y1="7" y2="25"></line>
+							<line class="cls-1" x1="7" x2="25" y1="25" y2="7"></line>
+						</g>
+					</g>
+				</svg>
+			</button>
+			<p class="main__about__title">⭐ بخش فواصل در نوتوپیا ⭐</p>
+		</div>
+		<p class="main__about__text">در این بخش می‌توانید فواصل موسیقایی را به‌ صورت کاملاً بصری روی پنج‌خط حامل
+			ببینید و تفاوت آن‌ها را
+			به‌طور دقیق درک کنید.</p>
+		<p class="main__about__text">
+			ابتدا نوع فاصله را مثل دوم، سوم یا پنجم انتخاب کنید و سپس کیفیت آن را از بین گزینه‌هایی مانند بزرگ،
+			کوچک، افزوده یا کاسته مشخص نمایید.
+			با هر انتخاب، نمونهٔ دقیق آن فاصله روی حامل نمایش داده می‌شود و می‌توانید رابطه بین دو نت را به صورت
+			دیداری بررسی کنید.
+		</p>
+		<p class="main__about__text">
+			این ابزار امکان مقایسه سریع فواصل را فراهم می‌کند تا بتوانید الگوهای موسیقایی و ساختار فواصل را راحت‌تر
+			یاد بگیرید.
+			همچنین می‌توانید تأثیر تغییر علامت‌های عرضی بر هر فاصله را مشاهده کنید و درک عملی از کاربرد آن‌ها پیدا
+			کنید.
+			برای مدرسان موسیقی، این بخش به‌عنوان یک ابزار آموزشی فوری کاربرد دارد و کمک می‌کند مفاهیم تئوری را با
+			نمونه‌های بصری و ملموس توضیح دهند.
+			استفاده منظم از این بخش باعث می‌شود یادگیری فواصل سریع‌تر و دقیق‌تر شود و هنرجو ارتباط بین نت‌ها را بهتر
+			حس کند.
+		</p>
+		<p class="main__about__text">
+			با نوتوپیا، فواصل دیگر فقط مفاهیم انتزاعی نیستند، بلکه قابل مشاهده، مقایسه و تمرین عملی هستند.</p>
+	</div>
+	<div class="footer" onclick="CnacelShowingAboutBox()" id="footer">
+		<form>
+			<div class="footer__news">
+				<div class="inner">
+					<div class="footer__news__phoneNumber place">
+						<svg height="22px" width="22px" class="footer__news__phoneNumber__svg" viewBox="0 0 64 64"
+							xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<rect x="18" y="8" width="28" height="48" rx="4"></rect>
+								<line x1="28" y1="12" x2="36" y2="12"></line>
+								<line x1="30" y1="52" x2="34" y2="52"></line>
+							</g>
+						</svg>
+						<input type="tel" class="footer__news__phoneNumber__input input" placeholder="شماره تماس"
+							id="txtPhoneNumber" required />
+					</div>
+					<div class="footer__news__email place">
+						<svg height="18px" width="18px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+							fill="#000000">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<style type="text/css">
+									.st0 {
+										fill: #7e7979;
+									}
+								</style>
+								<g>
+									<path class="st0"
+										d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345 c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345 C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203 c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958 c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064 c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571 c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637 L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136 C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435 C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959 l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959 C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8 V385.92z">
+									</path>
+								</g>
+							</g>
+						</svg>
+						<input type="email" class="footer__news__email__input input" placeholder="ایمیل" id="txtEmail"
+							required />
+					</div>
+					<div class="footer__news__register">
+						<button type="button" class="footer__news__register__button" onclick="registerInNews()">
+							عضویت در خبرنامه
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="footer__contact">
+			<div class="footer__contact__text">ارتباط با ما :</div>
+			<div class="footer__contact__facebook contact">
+				<svg width="38px" height="38px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<path fill="#1877F2"
+							d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z">
+						</path>
+						<path fill="#ffffff"
+							d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z">
+						</path>
+					</g>
+				</svg>
+			</div>
+			<div class="footer__contact__instagram contact">
+				<svg width="35px" height="35px" viewBox="0 0 3364.7 3364.7" xmlns="http://www.w3.org/2000/svg"
+					fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<defs>
+							<radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse">
+								<stop offset=".09" stop-color="#fa8f21"></stop>
+								<stop offset=".78" stop-color="#d82d7e"></stop>
+							</radialGradient>
+							<radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse">
+								<stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
+								<stop offset="1" stop-color="#8c3aaa"></stop>
+							</radialGradient>
+						</defs>
+						<path
+							d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+							fill="url(#0)"></path>
+						<path
+							d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+							fill="url(#1)"></path>
+						<path
+							d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57"
+							fill="#ffffff"></path>
+					</g>
+				</svg>
+			</div>
+			<div class="footer__contact__telegram contact">
+				<svg width="35px" height="35px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<g>
+							<path
+								d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
+								fill="#40B3E0"></path>
+							<path
+								d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
+								fill="#FFFFFF"></path>
+							<path
+								d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
+								fill="#D2E5F1"></path>
+							<path
+								d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
+								fill="#B5CFE4"></path>
+						</g>
+					</g>
+				</svg>
+			</div>
+			<div class="footer__contact__linkedin contact">
+				<svg width="40px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<path fill="#0A66C2"
+							d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z">
+						</path>
+					</g>
+				</svg>
+			</div>
+			<div class="footer__contact__youtube contact">
+				<svg width="35px" height="35px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<path fill="red"
+							d="M14.712 4.633a1.754 1.754 0 00-1.234-1.234C12.382 3.11 8 3.11 8 3.11s-4.382 0-5.478.289c-.6.161-1.072.634-1.234 1.234C1 5.728 1 8 1 8s0 2.283.288 3.367c.162.6.635 1.073 1.234 1.234C3.618 12.89 8 12.89 8 12.89s4.382 0 5.478-.289a1.754 1.754 0 001.234-1.234C15 10.272 15 8 15 8s0-2.272-.288-3.367z">
+						</path>
+						<path fill="#ffffff" d="M6.593 10.11l3.644-2.098-3.644-2.11v4.208z"></path>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<div class="privacy">
+			<div class="privacy__text">
+				© 2025 تمامی حقوق مادی و معنوی این سایت متعلق به وب‌سایت نوتوپیا می‌باشد.
+			</div>
+		</div>
+	</div>
+</body>
+<script src="FormDistances.js"></script>
+<script src="../Header/Header.js"></script>
+<script src="../Footer/Footer.js"></script>
+
+</html>
