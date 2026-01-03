@@ -1,0 +1,167 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 35vw;
+    height: 3.5vh;
+    border-radius: 4px;
+    border: 1px silver solid;
+}
+
+textarea {
+    width: 35vw;
+    height: 3.5vh;
+    border-radius: 4px;
+    border: 1px silver solid;
+    resize: none;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    direction: rtl;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    border: 1px rgb(241, 236, 236) solid;
+    border-radius: 2px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    justify-content: right;
+    margin: 1.5vw;
+}
+
+.main__form__formTitle {
+    color: rgb(0, 60, 255);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__form__ok {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main__form__ok__button {
+    margin-top: 3vh;
+    color: white;
+    background-color: rgb(46, 229, 46);
+    border: rgb(46, 229, 46) solid 1px;
+    border-radius: 4px;
+    width: 5vw;
+    height: 5vh;
+    font-size: large;
+    cursor: pointer;
+}
+
+.main__form__ok__button:hover {
+    background-color: rgb(255, 133, 2);
+    border: rgb(255, 133, 2) solid 1px;
+}
+
+.textPart {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.svg {
+    width: 25px;
+    height: 25px;
+}
+
+#txtDescription {
+    height: 50vh;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.main__owners {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    justify-content: right;
+    margin: 1.5vw;
+    gap: 2vh;
+}
+
+.mainSection {
+    border: rgb(255, 199, 68) dotted 2.5px;
+    border-radius: 20px;
+    padding: 1vw;
+    width: 29vw;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.flex {
+    display: flex;
+    gap: 2px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+@media(max-width:900px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 80vw;
+        height: 3.5vh;
+    }
+
+    textarea {
+        width: 80vw;
+        height: 3.5vh;
+        border-radius: 4px;
+        border: 1px silver solid;
+        resize: none;
+    }
+
+    .main__form__ok__button {
+        width: 30vw;
+        height: 5vh;
+    }
+
+    .mainSection {
+        width: 90vw;
+    }
+}
+
+@media(max-width:500px) {
+
+    .main__owners__company__address__text {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

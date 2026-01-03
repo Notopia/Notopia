@@ -1,0 +1,324 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.main {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__welcome {
+    background-image: url('../images/HomeBackground.jpg');
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.main__welcome__clip {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    height: 20vh;
+    margin-left: 1.5vw;
+}
+
+.main__welcome__company {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    margin-right: 2vw;
+    color: white;
+    font-style: italic;
+    font-size: small;
+}
+
+.main__welcome__company__logo {
+    width: 30px;
+}
+
+.main__welcome__notopiaText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+#icon {
+    width: 5.5vw;
+}
+
+.main__welcome__parts {
+    margin-top: 10vh;
+    display: flex;
+}
+
+.main__welcome__parts__distances {
+    width: 15vw;
+    direction: rtl;
+    text-align: start;
+    border: 1px black solid;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 2vw;
+}
+
+.main__welcome__parts__distances__title {
+    font-size: xx-large;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main__welcome__parts__distances__text {
+    font-size: medium;
+    cursor: default;
+}
+
+
+@media(max-width:400px) {
+    #icon {
+        width: 20vw;
+    }
+
+    #logo {
+        width: 48vw;
+    }
+
+    .main__welcome__company {
+        margin-right: 0vw;
+    }
+
+    .main__welcome__parts__distances {
+        width: 75vw;
+        margin-left: 0vw;
+        margin-top: 0vh;
+    }
+}
+
+@media(max-width:900px) and (min-width:400px) {
+    .main__welcome__parts__distances {
+        width: 75vw;
+        margin-left: 0vw;
+        margin-top: 0vh;
+    }
+    .main__welcome__parts
+    {
+        justify-content: center;
+    }
+    #icon{
+        width:15vw;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+.footer {
+    display: flex;
+    border-top: 1px solid rgb(156, 152, 152);
+    min-height: 10vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/FooterBackground.jpg);
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer__news {
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px rgba(246, 166, 17, 0.716);
+    border-radius: 4px;
+    border-style: dashed;
+    flex-direction: row;
+    margin-top: 3vw;
+}
+
+.inner {
+    display: flex;
+    border: 1px solid rgb(208, 206, 206);
+    border-radius: 4px;
+    height: 40px;
+    background-color: white;
+}
+
+.footer__news__phoneNumber {
+    display: flex;
+    border-left: 1px solid rgb(196, 193, 193);
+    align-items: center;
+}
+
+.footer__news__phoneNumber__input {
+    outline: none;
+    border: none;
+}
+
+.footer__news__email {
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+}
+
+.footer__news__email__input {
+    margin-right: 5px;
+}
+
+.footer__news__register__button {
+    border: none;
+    background-color: rgba(71, 242, 24, 0.842);
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.input {
+    outline: none;
+    border: none;
+    direction: rtl;
+    width: 29vw;
+}
+
+.footer__news__register__button:hover {
+    background-color: rgb(255, 133, 2);
+}
+
+.footer__contact {
+    display: flex;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+.contact {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.privacy__text {
+    direction: rtl;
+    padding-bottom: 3vh;
+    color: white;
+    font-size: 1vw;
+}
+
+@media(max-width:400px) {
+
+    .privacy__text {
+        font-size: 2.3vw;
+    }
+
+    .footer__contact__text {
+        font-size: 4vw;
+        margin-right: 2vw;
+    }
+
+    .footer__news__register__button {
+        font-size: 3vw;
+    }
+}
+
+@media(max-width:350px) {
+    .footer__contact__text {
+        font-size: 2.4vw;
+        margin-right: 5vw;
+    }
+}
+
+@media(min-width:400px) and (max-width:850px) {
+    .privacy__text {
+        font-size: 2vw;
+    }
+
+    .footer__news__register__button {
+        font-size: 2.3vw;
+    }
+}
+
+@media(max-width:600px) {
+    .footer__news {
+        display: flex;
+        direction: rtl;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 2px rgba(246, 166, 17, 0.716);
+        border-radius: 4px;
+        border-style: dashed;
+        flex-direction: row;
+        margin-top: 3vw;
+    }
+
+    .inner {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.5px;
+        height: 15vh;
+        border: none;
+        background-color: transparent;
+        width: 85vw;
+    }
+
+    .footer__news__phoneNumber {
+        padding-right: 6px;
+    }
+
+    .footer__news__email {
+        padding-right: 6px;
+    }
+
+    .footer__news__register__button {
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: rgba(71, 242, 24, 0.842);
+        height: 5vh;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .input {
+        outline: none;
+        border: none;
+        direction: rtl;
+    }
+
+    .place {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 2px solid rgb(4, 33, 100);
+        border-radius: 4px;
+        height: 4vh;
+        width: 95%;
+    }
+}
