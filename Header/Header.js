@@ -1,11 +1,11 @@
 function GoToDistancesPage() {
-    window.location.href = 'Notopia/FormDistances/FormDistances.html'
+    window.location.href = '/FormDistances/FormDistances.html'
 }
 function GoToHomePage() {
-    window.location.href = 'Notopia/index.html'
+    window.location.href = '/index.html'
 }
 function GoToContactPage() {
-    window.location.href = 'Notopia/FormContactUs/FormContactUs.html'
+    window.location.href = '/FormContactUs/FormContactUs.html'
 }
 let dropdownShowingStatus = false;
 function OpenDropdown() {
@@ -22,4 +22,5 @@ function CloseDropdown() {
     document.getElementById("dropdown").classList.remove("showDropdown");
 
 }
+
 
