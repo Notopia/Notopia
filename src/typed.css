@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
+
+.main {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #1e1e1e, #0d0d0d);
+    font-family: "Vazirmatn", sans-serif;
+    overflow: hidden;
+}
+
+.main__welcome {
+    padding: 40px 60px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+#welcomeText {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 0 0 10px rgba(255, 179, 0, 0.268);
+    line-height: 1.4;
+}
+
+.main__welcome__glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #ffa70e20;
+    filter: blur(120px);
+    border-radius: 50%;
+    animation: move 8s infinite linear alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translate(-150px, -150px);
+    }
+
+    to {
+        transform: translate(150px, 150px);
+    }
+}
+
+@media(max-width:600px) {
+    #welcomeText {
+        font-size: 30px;
+    }
+}
+@media(max-width:400px) {
+    #welcomeText {
+        font-size: 22px;
+    }
+}
+@media(max-width:300px) {
+    #welcomeText {
+        font-size: 16px;
+    }
+}
