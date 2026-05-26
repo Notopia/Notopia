@@ -1,14 +1,14 @@
 function GoToDistancesPage() {
-    window.location.href = '/Distances/Distances.html'
+    window.location.href = '/Notopia/Distances/Distances.html'
 }
 function GoToStepsPage() {
-    window.location.href = '/Steps/Steps.html'
+    window.location.href = '/Notopia/Steps/Steps.html'
 }
 function GoToHomePage() {
-    window.location.href = '/index.html'
+    window.location.href = '/Notopia/index.html'
 }
 function GoToContactPage() {
-    window.location.href = '/ContactUs/ContactUs.html'
+    window.location.href = '/Notopia/ContactUs/ContactUs.html'
 }
 let dropdownShowingStatus = false;
 function OpenDropdown() {
