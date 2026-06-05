@@ -90,76 +90,76 @@ function changeSelectHandler() {
     const select3 = document.getElementById("select3");
     const select4 = document.getElementById("select4");
     if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Do") {
-        step.src = "/images/Steps/KTMaDo.jpg";
+        step.src = "/Notopia/images/Steps/KTMaDo.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Re") {
-        step.src = "/images/Steps/KTMaRe.jpg";
+        step.src = "/Notopia/images/Steps/KTMaRe.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Mi") {
-        step.src = "/images/Steps/KTMaMi.jpg";
+        step.src = "/Notopia/images/Steps/KTMaMi.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Fa") {
-        step.src = "/images/Steps/KTMaFa.jpg";
+        step.src = "/Notopia/images/Steps/KTMaFa.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Sol") {
-        step.src = "/images/Steps/KTMaSol.jpg";
+        step.src = "/Notopia/images/Steps/KTMaSol.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "La") {
-        step.src = "/images/Steps/KTMaLa.jpg";
+        step.src = "/Notopia/images/Steps/KTMaLa.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Si") {
-        step.src = "/images/Steps/KTMaSi.jpg";
+        step.src = "/Notopia/images/Steps/KTMaSi.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "DoDies") {
-        step.src = "/images/Steps/KTMaDoDies.jpg";
+        step.src = "/Notopia/images/Steps/KTMaDoDies.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "MiBemalOrReDies") {
-        step.src = "/images/Steps/KTMaMiBemal.jpeg";
+        step.src = "/Notopia/images/Steps/KTMaMiBemal.jpeg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "FaDies") {
-        step.src = "/images/Steps/KTMaFaDies.jpg";
+        step.src = "/Notopia/images/Steps/KTMaFaDies.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "LaBemalOrSolDies") {
-        step.src = "/images/Steps/KTMaLaBemal.jpeg";
+        step.src = "/Notopia/images/Steps/KTMaLaBemal.jpeg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "SiBemalOrLaDies") {
-        step.src = "/images/Steps/KTMaSiBemal.jpg";
+        step.src = "/Notopia/images/Steps/KTMaSiBemal.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Do") {
-        step.src = "/images/Steps/KTMiDo.png";
+        step.src = "/Notopia/images/Steps/KTMiDo.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Re") {
-        step.src = "/images/Steps/KTMiRe.png";
+        step.src = "/Notopia/images/Steps/KTMiRe.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Mi") {
-        step.src = "/images/Steps/KTMiMi.png";
+        step.src = "/Notopia/images/Steps/KTMiMi.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Fa") {
-        step.src = "/images/Steps/KTMiFa.png";
+        step.src = "/Notopia/images/Steps/KTMiFa.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Sol") {
-        step.src = "/images/Steps/KTMiSol.png";
+        step.src = "/Notopia/images/Steps/KTMiSol.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "La") {
-        step.src = "/images/Steps/KTMiLa.png";
+        step.src = "/Notopia/images/Steps/KTMiLa.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Si") {
-        step.src = "/images/Steps/KTMiSi.png";
+        step.src = "/Notopia/images/Steps/KTMiSi.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "DoDies") {
-        step.src = "/images/Steps/KTMiDoDies.png";
+        step.src = "/Notopia/images/Steps/KTMiDoDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "MiBemalOrReDies") {
-        step.src = "/images/Steps/KTMiReDies.png";
+        step.src = "/Notopia/images/Steps/KTMiReDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "FaDies") {
-        step.src = "/images/Steps/KTMiFaDies.png";
+        step.src = "/Notopia/images/Steps/KTMiFaDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "LaBemalOrSolDies") {
-        step.src = "/images/Steps/KTMiSolDies.png";
+        step.src = "/Notopia/images/Steps/KTMiSolDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "SiBemalOrLaDies") {
-        step.src = "/images/Steps/KTMiLaDies.png";
+        step.src = "/Notopia/images/Steps/KTMiLaDies.png";
     }
     else {
         step.src = "";
@@ -173,76 +173,76 @@ function AlwaysCheck() {
     const select3 = document.getElementById("select3");
     const select4 = document.getElementById("select4");
     if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Do") {
-        step.src = "/images/Steps/KTMaDo.jpg";
+        step.src = "/Notopia/images/Steps/KTMaDo.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Re") {
-        step.src = "/images/Steps/KTMaRe.jpg";
+        step.src = "/Notopia/images/Steps/KTMaRe.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Mi") {
-        step.src = "/images/Steps/KTMaMi.jpg";
+        step.src = "/Notopia/images/Steps/KTMaMi.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Fa") {
-        step.src = "/images/Steps/KTMaFa.jpg";
+        step.src = "/Notopia/images/Steps/KTMaFa.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Sol") {
-        step.src = "/images/Steps/KTMaSol.jpg";
+        step.src = "/Notopia/images/Steps/KTMaSol.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "La") {
-        step.src = "/images/Steps/KTMaLa.jpg";
+        step.src = "/Notopia/images/Steps/KTMaLa.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "Si") {
-        step.src = "/images/Steps/KTMaSi.jpg";
+        step.src = "/Notopia/images/Steps/KTMaSi.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "DoDies") {
-        step.src = "/images/Steps/KTMaDoDies.jpg";
+        step.src = "/Notopia/images/Steps/KTMaDoDies.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "MiBemalOrReDies") {
-        step.src = "/images/Steps/KTMaMiBemal.jpeg";
+        step.src = "/Notopia/images/Steps/KTMaMiBemal.jpeg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "FaDies") {
-        step.src = "/images/Steps/KTMaFaDies.jpg";
+        step.src = "/Notopia/images/Steps/KTMaFaDies.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "LaBemalOrSolDies") {
-        step.src = "/images/Steps/KTMaLaBemal.jpeg";
+        step.src = "/Notopia/images/Steps/KTMaLaBemal.jpeg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Major" && select4.value == "SiBemalOrLaDies") {
-        step.src = "/images/Steps/KTMaSiBemal.jpg";
+        step.src = "/Notopia/images/Steps/KTMaSiBemal.jpg";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Do") {
-        step.src = "/images/Steps/KTMiDo.png";
+        step.src = "/Notopia/images/Steps/KTMiDo.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Re") {
-        step.src = "/images/Steps/KTMiRe.png";
+        step.src = "/Notopia/images/Steps/KTMiRe.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Mi") {
-        step.src = "/images/Steps/KTMiMi.png";
+        step.src = "/Notopia/images/Steps/KTMiMi.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Fa") {
-        step.src = "/images/Steps/KTMiFa.png";
+        step.src = "/Notopia/images/Steps/KTMiFa.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Sol") {
-        step.src = "/images/Steps/KTMiSol.png";
+        step.src = "/Notopia/images/Steps/KTMiSol.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "La") {
-        step.src = "/images/Steps/KTMiLa.png";
+        step.src = "/Notopia/images/Steps/KTMiLa.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "Si") {
-        step.src = "/images/Steps/KTMiSi.png";
+        step.src = "/Notopia/images/Steps/KTMiSi.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "DoDies") {
-        step.src = "/images/Steps/KTMiDoDies.png";
+        step.src = "/Notopia/images/Steps/KTMiDoDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "MiBemalOrReDies") {
-        step.src = "/images/Steps/KTMiReDies.png";
+        step.src = "/Notopia/images/Steps/KTMiReDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "FaDies") {
-        step.src = "/images/Steps/KTMiFaDies.png";
+        step.src = "/Notopia/images/Steps/KTMiFaDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "LaBemalOrSolDies") {
-        step.src = "/images/Steps/KTMiSolDies.png";
+        step.src = "/Notopia/images/Steps/KTMiSolDies.png";
     }
     else if (select1.value == "Koromatic" && select2.value == "Tabi'i" && select3.value == "Minor" && select4.value == "SiBemalOrLaDies") {
-        step.src = "/images/Steps/KTMiLaDies.png";
+        step.src = "/Notopia/images/Steps/KTMiLaDies.png";
     }
     else {
         step.src = "";
