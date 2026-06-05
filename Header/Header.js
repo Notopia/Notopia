@@ -6,22 +6,22 @@ body.addEventListener("loading", () => {
 })
 function GoToDistancesPage() {
     setTimeout(() => {
-        window.location.href = '/Distances/Distances.html'
+        window.location.href = '/Notopia/Distances/Distances.html'
     }, 1000)
 }
 function GoToStepsPage() {
     setTimeout(() => {
-        window.location.href = '/Steps/Steps.html'
+        window.location.href = '/Notopia/Steps/Steps.html'
     }, 1000)
 }
 function GoToHomePage() {
     setTimeout(() => {
-        window.location.href = '/index.html'
+        window.location.href = '/Notopia/index.html'
     }, 1000)
 }
 function GoToContactPage() {
     setTimeout(() => {
-        window.location.href = '/ContactUs/ContactUs.html'
+        window.location.href = '/Notopia/ContactUs/ContactUs.html'
     }, 1000)
 }
 let dropdownShowingStatus = false;
