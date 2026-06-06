@@ -21,88 +21,88 @@ function setThePicture() {
     let selectDistance2 = document.getElementById("selectDistance").value;
     let selectKind = document.getElementById("selectKind").value;
     if (selectDistance2 == "first" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedFirst.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedFirst.jpeg";
     }
     else if (selectDistance2 == "first" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedFirst.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedFirst.jpeg";
     }
     else if (selectDistance2 == "first" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteFirst.jpeg";
+        resultImage.src = "/Notopia/images/Distances/CompleteFirst.jpeg";
     }
     else if (selectDistance2 == "second" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleSecond.png";
+        resultImage.src = "/Notopia/images/Distances/LittleSecond.png";
     }
     else if (selectDistance2 == "second" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigSecond.png";
+        resultImage.src = "/Notopia/images/Distances/BigSecond.png";
     }
     else if (selectDistance2 == "second" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedSecond.png";
+        resultImage.src = "/Notopia/images/Distances/AddedSecond.png";
     }
     else if (selectDistance2 == "second" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedSecond.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedSecond.jpeg";
     }
     else if (selectDistance2 == "third" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigThird.png";
+        resultImage.src = "/Notopia/images/Distances/BigThird.png";
     }
     else if (selectDistance2 == "third" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedThird.png";
+        resultImage.src = "/Notopia/images/Distances/AddedThird.png";
     }
     else if (selectDistance2 == "third" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleThird.jpeg";
+        resultImage.src = "/Notopia/images/Distances/LittleThird.jpeg";
     }
     else if (selectDistance2 == "third" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedThird.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedThird.jpeg";
     }
     else if (selectDistance2 == "forth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedForth.jpg";
+        resultImage.src = "/Notopia/images/Distances/AddedForth.jpg";
     }
     else if (selectDistance2 == "forth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteForth.jpg";
+        resultImage.src = "/Notopia/images/Distances/CompleteForth.jpg";
     }
     else if (selectDistance2 == "forth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedForth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedForth.jpeg";
     }
     else if (selectDistance2 == "fifth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteFifth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/CompleteFifth.jpeg";
     }
     else if (selectDistance2 == "fifth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedFifth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedFifth.jpeg";
     }
     else if (selectDistance2 == "fifth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedFifth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedFifth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/LittleSixth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/BigSixth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedSixth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedSixth.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/LittleSeventh.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/BigSeventh.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedSeventh.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedSeventh.jpeg";
     }
     else if (selectDistance2 == "eighth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteEighth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/CompleteEighth.jpeg";
     }
     else if (selectDistance2 == "eighth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedEighth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedEighth.jpeg";
     }
     else if (selectDistance2 == "eighth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedEighth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedEighth.jpeg";
     }
     else {
         resultImage.src = "";
@@ -113,88 +113,88 @@ function AlwaysCheck() {
     let selectDistance2 = document.getElementById("selectDistance").value;
     let selectKind = document.getElementById("selectKind").value;
     if (selectDistance2 == "first" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedFirst.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedFirst.jpeg";
     }
     else if (selectDistance2 == "first" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedFirst.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedFirst.jpeg";
     }
     else if (selectDistance2 == "first" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteFirst.jpeg";
+        resultImage.src = "/Notopia/images/Distances/CompleteFirst.jpeg";
     }
     else if (selectDistance2 == "second" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleSecond.png";
+        resultImage.src = "/Notopia/images/Distances/LittleSecond.png";
     }
     else if (selectDistance2 == "second" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigSecond.png";
+        resultImage.src = "/Notopia/images/Distances/BigSecond.png";
     }
     else if (selectDistance2 == "second" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedSecond.png";
+        resultImage.src = "/Notopia/images/Distances/AddedSecond.png";
     }
     else if (selectDistance2 == "second" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedSecond.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedSecond.jpeg";
     }
     else if (selectDistance2 == "third" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigThird.png";
+        resultImage.src = "/Notopia/images/Distances/BigThird.png";
     }
     else if (selectDistance2 == "third" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedThird.png";
+        resultImage.src = "/Notopia/images/Distances/AddedThird.png";
     }
     else if (selectDistance2 == "third" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleThird.jpeg";
+        resultImage.src = "/Notopia/images/Distances/LittleThird.jpeg";
     }
     else if (selectDistance2 == "third" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedThird.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedThird.jpeg";
     }
     else if (selectDistance2 == "forth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedForth.jpg";
+        resultImage.src = "/Notopia/images/Distances/AddedForth.jpg";
     }
     else if (selectDistance2 == "forth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteForth.jpg";
+        resultImage.src = "/Notopia/images/Distances/CompleteForth.jpg";
     }
     else if (selectDistance2 == "forth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedForth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedForth.jpeg";
     }
     else if (selectDistance2 == "fifth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteFifth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/CompleteFifth.jpeg";
     }
     else if (selectDistance2 == "fifth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedFifth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedFifth.jpeg";
     }
     else if (selectDistance2 == "fifth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedFifth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedFifth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/LittleSixth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/BigSixth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedSixth.jpeg";
     }
     else if (selectDistance2 == "sixth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedSixth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedSixth.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "little") {
-        resultImage.src = "/images/Distances/LittleSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/LittleSeventh.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/BigSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/BigSeventh.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedSeventh.jpeg";
     }
     else if (selectDistance2 == "seventh" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedSeventh.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedSeventh.jpeg";
     }
     else if (selectDistance2 == "eighth" && selectKind == "completeOrBig") {
-        resultImage.src = "/images/Distances/CompleteEighth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/CompleteEighth.jpeg";
     }
     else if (selectDistance2 == "eighth" && selectKind == "added") {
-        resultImage.src = "/images/Distances/AddedEighth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/AddedEighth.jpeg";
     }
     else if (selectDistance2 == "eighth" && selectKind == "reduced") {
-        resultImage.src = "/images/Distances/ReducedEighth.jpeg";
+        resultImage.src = "/Notopia/images/Distances/ReducedEighth.jpeg";
     }
     else {
         resultImage.src = "";
