@@ -20,20 +20,10 @@ A web-based tool for learning music theory concepts — visualize **scales** and
 ## 📸 Screenshots
  
 ### Intervals
-![Intervals](screenshots/intervals.png)
+![Intervals](ReadmeImages/Intervals.png)
  
 ### Scales
-![Scales](screenshots/scales.png)
- 
----
- 
-## 🛠 Tech Stack
- 
-| Technology | Usage |
-|------------|-------|
-| HTML5 | Structure |
-| CSS3 | Styling |
-| Vanilla JavaScript | Logic & Interactivity |
+![Scales](ReadmeImages/Scales.png)
  
 ---
  
