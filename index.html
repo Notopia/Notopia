@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffb638">
+    <title>Notopia</title>
+    <link rel="stylesheet" href="Home/Home.css" />
+    <link rel="stylesheet" href="Header/Header.css" />
+    <link rel="stylesheet" href="Footer/Footer.css">
+    <link rel="icon" href="images/icon.webp" type="image/x-image" />
+    <link rel="stylesheet" href="src/typed.css">
+</head>
+
+<body onscroll="CloseDropdown()" onload="HideLoading()">
+    <div class="loading__container">
+        <div class="loading">
+            <lottie-player autoplay loop mode="normal" src="/Animations/Loading.json" style="width: 220px">
+            </lottie-player>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__menu" onclick="OpenDropdown()">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M20 7L4 7" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M20 12L4 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M20 17L4 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                </g>
+            </svg>
+        </div>
+        <section class="header__sections">
+            <div class="header__sections__home section" id="homePart" onclick="GoToHomePage(), ChangePage()">
+                خانه
+                <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z"
+                            fill="#ffb638"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="header__sections__distances section" id="distancesPart"
+                onclick="GoToDistancesPage(), ChangePage()">
+                فواصل
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M13 18V10V2" stroke="#ffb638" stroke-width="2.4" stroke-linecap="round"></path>
+                        <circle cx="9" cy="18" r="4" stroke="#ffb638" stroke-width="2.4"></circle>
+                        <path d="M19 8C15.6863 8 13 5.31371 13 2" stroke="#ffb638" stroke-width="2.4"
+                            stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="header__sections__steps section" onclick="GoToStepsPage(), ChangePage()">
+                گام ها
+                <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.4506 1.22841C20.7282 0.863369 22 1.8227 22 3.15145V16C22 18.2091 20.2091 20 18 20C15.7909 20 14 18.2091 14 16C14 13.7909 15.7909 12 18 12C18.7286 12 19.4117 12.1948 20 12.5351V7.07142L10 9.92857V19C10 21.2091 8.20914 23 6 23C3.79086 23 2 21.2091 2 19C2 16.7909 3.79086 15 6 15C6.72857 15 7.41165 15.1948 8 15.5351V6.0086C8 5.11564 8.59196 4.33086 9.45056 4.08555L19.4506 1.22841ZM18.7669 3.36991C19.3815 3.18555 20 3.64573 20 4.28734C20 4.71033 19.7225 5.08323 19.3174 5.20477L11.2331 7.63008C10.6185 7.81444 10 7.35426 10 6.71265C10 6.28966 10.2775 5.91676 10.6826 5.79522L18.7669 3.36991ZM16.0167 16C16.0167 17.0953 16.9047 17.9833 18 17.9833C19.0954 17.9833 19.9833 17.0953 19.9833 16C19.9833 14.9046 19.0954 14.0167 18 14.0167C16.9047 14.0167 16.0167 14.9046 16.0167 16ZM4.0167 19C4.0167 20.0953 4.90465 20.9833 6 20.9833C7.09535 20.9833 7.9833 20.0953 7.9833 19C7.9833 17.9046 7.09535 17.0167 6 17.0167C4.90465 17.0167 4.0167 17.9046 4.0167 19Z"
+                            fill="#ffb638"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="header__sections__contact section" id="contactPart" onclick="GoToContactPage(), ChangePage()">
+                ارتباط‌‌‌ با‌ما
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="#ffb638" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                    aria-label="Contact headset">
+                    <path d="M6 14v2a2 2 0 0 0 2 2h1" />
+                    <path d="M18 14v2a2 2 0 0 1-2 2h-1" />
+                    <path d="M4 12a8 8 0 0 1 16 0" />
+                    <rect x="3" y="11" width="4" height="5" rx="2" />
+                    <rect x="17" y="11" width="4" height="5" rx="2" />
+                    <path d="M12 20h2a2 2 0 0 0 2-2" />
+                </svg>
+            </div>
+        </section>
+        <div class="header__logo">
+            <img src="images/NotopiaLogo.webp" alt="Notopia Logo" class="header__logo__image"
+                onclick="GoToHomePage(), ChangePage()" />
+        </div>
+    </header>
+    <div class="dropdown" id="dropdown">
+        <div class="dropdown__menu">
+            <a class="dropdown__menu__home Msection " id="homePart" onclick="GoToHomePage(), ChangePage()">
+                خانه
+                <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z"
+                            fill="#ffb638"></path>
+                    </g>
+                </svg>
+            </a>
+            <a class="dropdown__menu__distances Msection " id="distancesPart"
+                onclick="GoToDistancesPage(), ChangePage()">
+                فواصل
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M13 18V10V2" stroke="#ffb638" stroke-width="2.4" stroke-linecap="round"></path>
+                        <circle cx="9" cy="18" r="4" stroke="#ffb638" stroke-width="2.4"></circle>
+                        <path d="M19 8C15.6863 8 13 5.31371 13 2" stroke="#ffb638" stroke-width="2.4"
+                            stroke-linecap="round">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <a class="dropdown__menu__steps Msection " id="stepsPart" onclick="GoToStepsPage(), ChangePage()">
+                گام ها
+                <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.4506 1.22841C20.7282 0.863369 22 1.8227 22 3.15145V16C22 18.2091 20.2091 20 18 20C15.7909 20 14 18.2091 14 16C14 13.7909 15.7909 12 18 12C18.7286 12 19.4117 12.1948 20 12.5351V7.07142L10 9.92857V19C10 21.2091 8.20914 23 6 23C3.79086 23 2 21.2091 2 19C2 16.7909 3.79086 15 6 15C6.72857 15 7.41165 15.1948 8 15.5351V6.0086C8 5.11564 8.59196 4.33086 9.45056 4.08555L19.4506 1.22841ZM18.7669 3.36991C19.3815 3.18555 20 3.64573 20 4.28734C20 4.71033 19.7225 5.08323 19.3174 5.20477L11.2331 7.63008C10.6185 7.81444 10 7.35426 10 6.71265C10 6.28966 10.2775 5.91676 10.6826 5.79522L18.7669 3.36991ZM16.0167 16C16.0167 17.0953 16.9047 17.9833 18 17.9833C19.0954 17.9833 19.9833 17.0953 19.9833 16C19.9833 14.9046 19.0954 14.0167 18 14.0167C16.9047 14.0167 16.0167 14.9046 16.0167 16ZM4.0167 19C4.0167 20.0953 4.90465 20.9833 6 20.9833C7.09535 20.9833 7.9833 20.0953 7.9833 19C7.9833 17.9046 7.09535 17.0167 6 17.0167C4.90465 17.0167 4.0167 17.9046 4.0167 19Z"
+                            fill="#ffb638"></path>
+                    </g>
+                </svg>
+            </a>
+            <a class="header__sections__contact Msection " id="contactPart" onclick="GoToContactPage(), ChangePage()">
+                ارتباط‌‌‌ با‌ما
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="#ffb638" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                    aria-label="Contact headset">
+                    <path d="M6 14v2a2 2 0 0 0 2 2h1" />
+                    <path d="M18 14v2a2 2 0 0 1-2 2h-1" />
+                    <path d="M4 12a8 8 0 0 1 16 0" />
+                    <rect x="3" y="11" width="4" height="5" rx="2" />
+                    <rect x="17" y="11" width="4" height="5" rx="2" />
+                    <path d="M12 20h2a2 2 0 0 0 2-2" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <main class="main" onclick="CloseDropdown()">
+        <div class="noteFly__container">
+            <div class="noteFly">
+                <lottie-player autoplay loop mode="normal" src="/Animations/NoteFly.json" style="width: 220px">
+                </lottie-player>
+            </div>
+        </div>
+        <div class="main__welcome">
+            <div class="main__welcome__company">
+                By
+                <img src="images/GOODBYELogo.webp" class="main__welcome__company__logo" alt="GOODBYE-Company Logo">
+                GOODBYE co.
+            </div>
+            <div class="main__welcome__glow"></div>
+            <div class="main__welcome__notopiaText">
+                <img src="images/icon.webp" alt="Notpia icon" id="icon">
+                <img src="images/NotopiaLogo.webp" fetchpriority="high" alt="Notopia Logo" id="logo">
+            </div>
+            <div class="main__welcome__clip" id="welcomeText">
+                به نوتوپیا خوش آمدید
+            </div>
+            <div class="main__welcome__parts">
+                <div class="main__welcome__parts__steps part" onmouseover="MouseOverHandler2()"
+                    onmouseleave="MouseLeaveHandler2()" onclick="GoToStepsPage(), ChangePage()">
+                    <div class="main__welcome__parts__steps__title" id="stepsPartTitle" onclick="GoToStepsPage()">
+                        گام ها
+                        <svg onmouseover="MouseOverHandler2()" id="SVGArrow" width="20px" height="20px"
+                            viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>left-arrow</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="ui-gambling-website-lined-icnos-casinoshunter2"
+                                        transform="translate(-1641.000000, -158.000000)" fill="#ffffff"
+                                        fill-rule="nonzero">
+                                        <g id="1" transform="translate(1350.000000, 120.000000)">
+                                            <path
+                                                d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                                                id="left-arrow"
+                                                transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) ">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="main__welcome__parts__steps__text" onclick="GoToStepsPage()">
+                        باانتخاب نوع گام مورد نظر توضیحات ، الگوی تمرینی و سرکلید مربوط به همان گام نمایش داده می‌شود.
+                    </div>
+                </div>
+                <div class="main__welcome__parts__distances part" onmouseover="MouseOverHandler()"
+                    onmouseleave="MouseLeaveHandler()" onclick="GoToDistancesPage(), ChangePage()">
+                    <div class="main__welcome__parts__distances__title" id="distancesPartTitle"
+                        onclick="GoToDistancesPage()">
+                        فواصل
+                        <svg onmouseover="MouseOverHandler()" id="SVGArrow" width="20px" height="20px"
+                            viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>left-arrow</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="ui-gambling-website-lined-icnos-casinoshunter"
+                                        transform="translate(-1641.000000, -158.000000)" fill="#ffffff"
+                                        fill-rule="nonzero">
+                                        <g id="1" transform="translate(1350.000000, 120.000000)">
+                                            <path
+                                                d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                                                id="left-arrow"
+                                                transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) ">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="main__welcome__parts__distances__text" onclick="GoToDistancesPage()">
+                        با انتخاب نوع و فاصلهٔ موردنظر، الگوی تمرینی مربوط به همان فاصله نمایش داده می‌شود.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" onclick="CnacelShowingAboutBox(), CloseDropdown()" id="footer">
+        <form>
+            <div class="footer__news">
+                <div class="inner">
+                    <div class="footer__news__phoneNumber place">
+                        <svg width="23px" height="23px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M18.9998 17.5V6.5C19.0627 5.37366 18.6774 4.2682 17.9279 3.42505C17.1784 2.5819 16.1258 2.06958 14.9998 2H8.99981C7.87387 2.06958 6.82121 2.5819 6.07175 3.42505C5.32228 4.2682 4.9369 5.37366 4.99982 6.5V17.5C4.9369 18.6263 5.32228 19.7317 6.07175 20.5748C6.82121 21.418 7.87387 21.9303 8.99981 21.9999H14.9998C16.1258 21.9303 17.1784 21.418 17.9279 20.5748C18.6774 19.7317 19.0627 18.6263 18.9998 17.5V17.5Z"
+                                    stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M14 5H10" stroke="#757575" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                        <input type="tel" class="footer__news__phoneNumber__input input" placeholder="شماره تماس"
+                            id="txtPhoneNumber" required />
+                    </div>
+                    <div class="footer__news__email place">
+                        <svg height="18px" width="18px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #7e7979;
+                                    }
+                                </style>
+                                <g>
+                                    <path class="st0"
+                                        d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345 c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345 C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203 c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958 c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064 c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571 c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637 L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136 C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435 C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959 l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959 C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8 V385.92z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <input type="email" class="footer__news__email__input input" placeholder="ایمیل" id="txtEmail"
+                            required />
+                    </div>
+                    <div class="footer__news__register">
+                        <button type="button" class="footer__news__register__button" onclick="registerInNews()">
+                            عضویت در خبرنامه
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="footer__contact">
+            <div class="footer__contact__text">راه ارتباطی :</div>
+            <a class="footer__contact__bale contact" href="https://ble.ir/alireza_gt4x" title="bale" target="_blank"
+                rel="noopener">
+                <svg fill="#00B793" width="64px" height="64px" viewBox="0 0 24 24" role="img"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M11.425 23.987a12.218 12.218 0 0 1-2.95-.514 6.578 6.578 0 0 0-.336-.116C4.936 22.303 2.22 19.763.913 16.599a11.92 11.92 0 0 1-.9-4.063C.005 12.377.001 10.246 0 6.74 0 .71-.005 1.137.07.903.23.394.673.05 1.224.005c.421-.034.7.088 1.603.699.562.38 1.119.78 1.796 1.289.315.237.353.261.376.247l.35-.23c.58-.381 1.11-.677 1.7-.945A11.913 11.913 0 0 1 9.766.21a11.19 11.19 0 0 1 2.041-.2c1.14-.016 2.077.091 3.152.36 3.55.888 6.538 3.411 8.028 6.78.492 1.113.845 2.43.945 3.522.033.366.039.43.053.611.008.105.015.406.015.669 0 .783-.065 1.57-.169 2.064a5.474 5.474 0 0 0-.046.26c-.056.378-.214.987-.399 1.535-.205.613-.367.999-.684 1.633a11.95 11.95 0 0 1-2.623 3.436c-.44.396-.829.705-1.26 1.003-.647.445-1.307.812-2.039 1.134-.6.265-1.44.539-2.101.686a11.165 11.165 0 0 1-1.178.202 12.28 12.28 0 0 1-2.076.082zm-.61-5.92c.294-.06.678-.209.864-.337.144-.099.428-.376 2.064-2.013a161.8 161.8 0 0 1 1.764-1.753c.017 0 1.687-1.67 1.687-1.689 0-.02 1.64-1.648 1.661-1.648.01 0 .063-.047.118-.106.467-.495.682-.957.716-1.547.026-.433-.06-.909-.217-1.196a2.552 2.552 0 0 0-.983-1.024c-.281-.163-.512-.233-.888-.27-.306-.031-.688 0-.948.075-.243.07-.603.274-.853.481-.042.035-1.279 1.265-2.748 2.733l-2.671 2.67-1.093-1.09c-.6-.6-1.12-1.114-1.155-1.142a2.419 2.419 0 0 0-1.338-.51c-.404-.013-.91.09-1.224.25a2.89 2.89 0 0 0-.659.526c-.108.12-.287.357-.29.385-.003.03-.009.044-.065.16a2.312 2.312 0 0 0-.224.91c-.011.229-.01.265.019.491.045.353.24.781.51 1.115.05.063.97.992 2.044 2.064 1.507 1.505 1.98 1.97 2.074 2.039.327.24.683.388 1.101.456.182.03.5.016.734-.03z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="privacy">
+            <div class="privacy__text">
+                © 2026 تمامی حقوق مادی و معنوی این سایت متعلق به وب‌سایت نوتوپیا می‌باشد.
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="Home/Home.js"></script>
+<script src="Header/Header.js"></script>
+<script src="Footer/Footer.js"></script>
+<script src="src/typed.min.js"></script>
+<script src="/node_modules/@lottiefiles/lottie-player/dist/tgs-player.js"></script>
+<script>
+    window.addEventListener("DOMContentLoaded", function () {
+        new Typed("#welcomeText", {
+            strings: ["به نوتوپیا خوش آمدید!"],
+            typeSpeed: 60,
+            backSpeed: 0,
+            backDelay: 1200,
+            fadeOut: true,
+            fadeOutDelay: 0,
+            loop: true,
+            showCursor: false,
+            cursorChar: '|'
+        });
+    });
+</script>
+
+</html>
