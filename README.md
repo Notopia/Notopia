@@ -27,4 +27,4 @@ A web-based tool for learning music theory concepts — visualize **scales** and
  
 ---
  
-<p align="center">Made with ❤️ for music lovers</p>
+<p align="center">Made with 🧡 for music lovers</p>
