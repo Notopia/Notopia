@@ -272,7 +272,9 @@ function CancelShowingFullscreenNoteButton() {
     window.location.href = "./Distances.html"
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const selectedSection = document.getElementById("distancesPart");
+const selectedSectionHeader = document.querySelector(".header__sections__distances");
+const selectedSectionDropdown = document.querySelector("#distancesPart");
 (function () {
-    selectedSection.classList.add("selectedDiv");
+    selectedSectionHeader.classList.add("selectedDiv");
+    selectedSectionDropdown.classList.add("selectedDiv");
 })();

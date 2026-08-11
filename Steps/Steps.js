@@ -853,7 +853,9 @@ function AlwaysCheck() {
     changeSelectHandler();
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const selectedSection = document.getElementById("stepsPart");
+const selectedSectionHeader = document.querySelector(".header__sections__steps");
+const selectedSectionDropdown = document.querySelector("#stepsPart");
 (function () {
-    selectedSection.classList.add("selectedDiv");
+    selectedSectionHeader.classList.add("selectedDiv");
+    selectedSectionDropdown.classList.add("selectedDiv");
 })();

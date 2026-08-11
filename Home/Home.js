@@ -23,7 +23,9 @@ function ChangePage() {
     loading.classList.add("Lflex");
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const selectedSection = document.getElementById("homePart");
+const selectedSectionHeader = document.querySelector(".header__sections__home");
+const selectedSectionDropdown = document.querySelector("#homePart");
 (function () {
-    selectedSection.classList.add("selectedDiv");
+    selectedSectionHeader.classList.add("selectedDiv");
+    selectedSectionDropdown.classList.add("selectedDiv");
 })();

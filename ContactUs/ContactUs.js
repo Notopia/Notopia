@@ -69,7 +69,9 @@ function Send() {
     }
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const selectedSection = document.getElementById("contactPart");
+const selectedSectionHeader = document.querySelector(".header__sections__contact");
+const selectedSectionDropdown = document.querySelector("#contactPart");
 (function () {
-    selectedSection.classList.add("selectedDiv");
+    selectedSectionHeader.classList.add("selectedDiv");
+    selectedSectionDropdown.classList.add("selectedDiv");
 })();

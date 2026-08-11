@@ -23,6 +23,12 @@ function GoToStepsPage() {
     }, 1000)
     CloseDropdown()
 }
+function GoToPianoPage() {
+    setTimeout(() => {
+        window.location.href = '/Piano/'
+    }, 1000)
+    CloseDropdown()
+}
 function GoToHomePage() {
     setTimeout(() => {
         window.location.href = '/'
