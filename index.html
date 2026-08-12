@@ -195,11 +195,44 @@
                 به نوتوپیا خوش آمدید
             </div>
             <div class="main__welcome__parts">
-                <div class="main__welcome__parts__steps part" onmouseover="MouseOverHandler2()"
-                    onmouseleave="MouseLeaveHandler2()" onclick="GoToStepsPage(), ChangePage()">
+                <div class="main__welcome__parts__piano part" onmouseover="MouseOverPianoHandler()"
+                    onmouseleave="MouseLeavePianoHandler()" onclick="GoToPianoPage(), ChangePage()">
+                    <div class="main__welcome__parts__piano__title" id="pianoPartTitle" onclick="GoToPianoPage()">
+                        پیانو مجازی
+                        <svg onmouseover="MouseOverPianoHandler()" class="SVGArrow" width="20px" height="20px"
+                            viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>left-arrow</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="ui-gambling-website-lined-icnos-casinoshunter3"
+                                        transform="translate(-1641.000000, -158.000000)" fill="#ffffff"
+                                        fill-rule="nonzero">
+                                        <g id="1" transform="translate(1350.000000, 120.000000)">
+                                            <path
+                                                d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                                                id="left-arrow"
+                                                transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) ">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="main__welcome__parts__piano__text" onclick="GoToPianoPage()">
+                        با کلیک یا لمس هر کلید، صدای نت متناظر پخش می‌شود و امکان تمرین و نواختن آزاد پیانو به‌صورت
+                        آنلاین فراهم است.
+                    </div>
+                </div>
+                <div class="main__welcome__parts__steps part" onmouseover="MouseOverStepsHandler()"
+                    onmouseleave="MouseLeaveStepsHandler()" onclick="GoToStepsPage(), ChangePage()">
                     <div class="main__welcome__parts__steps__title" id="stepsPartTitle" onclick="GoToStepsPage()">
                         گام ها
-                        <svg onmouseover="MouseOverHandler2()" id="SVGArrow" width="20px" height="20px"
+                        <svg onmouseover="MouseOverHandler2()" class="SVGArrow" width="20px" height="20px"
                             viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -227,12 +260,12 @@
                         باانتخاب نوع گام مورد نظر توضیحات ، الگوی تمرینی و سرکلید مربوط به همان گام نمایش داده می‌شود.
                     </div>
                 </div>
-                <div class="main__welcome__parts__distances part" onmouseover="MouseOverHandler()"
-                    onmouseleave="MouseLeaveHandler()" onclick="GoToDistancesPage(), ChangePage()">
+                <div class="main__welcome__parts__distances part" onmouseover="MouseOverDistancesHandler()"
+                    onmouseleave="MouseLeaveDistancesHandler()" onclick="GoToDistancesPage(), ChangePage()">
                     <div class="main__welcome__parts__distances__title" id="distancesPartTitle"
                         onclick="GoToDistancesPage()">
                         فواصل
-                        <svg onmouseover="MouseOverHandler()" id="SVGArrow" width="20px" height="20px"
+                        <svg onmouseover="MouseOverHandler()" class="SVGArrow" width="20px" height="20px"
                             viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
