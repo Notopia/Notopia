@@ -25,6 +25,7 @@ function PrimaryButtonMouseupHandler(event) {
 }
 //*Play audio
 function PlayAudio(id) {
+    audios[id].currentTime = 0;
     audios[id].play()
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
