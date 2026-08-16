@@ -106,11 +106,11 @@ body {
 .dropdown__menu {
     background-color: white;
     padding-left: 20px;
-    display: flex;
+    display: grid;
     padding: 16px;
-    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5vh;
-    justify-content: center;
+    place-items: center;
     border-radius: 12px;
 }
 
@@ -124,6 +124,8 @@ body {
     align-items: center;
     display: flex;
     gap: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .Msection:hover {
@@ -170,7 +172,7 @@ body {
         padding-right: 1vw;
     }
 
-    .header__logo__image{
+    .header__logo__image {
         margin-top: 10px;
     }
 }
@@ -182,7 +184,6 @@ body {
 
     .header__logo {
         width: 23vw;
-        margin-right: 4vw;
     }
 
     .header__logo__image {
@@ -202,8 +203,8 @@ body {
     .header__logo {
         width: 20vw;
     }
-    
-    .header__logo__image{
+
+    .header__logo__image {
         margin-top: 10px;
     }
 }
@@ -220,7 +221,17 @@ body {
     }
 }
 
-@media (max-width:499px) {
+@media (min-width:769px) {
+    .header__menu {
+        display: none;
+    }
+    
+    .dropdown__menu{
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
     .header__sections {
         display: none;
     }
@@ -233,13 +244,7 @@ body {
 
     .header__logo {
         width: 25vw;
-    }
-
-}
-
-@media (min-width:499px) {
-    .header__menu {
-        display: none;
+        margin-right: 4vw;
     }
 }
 
