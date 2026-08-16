@@ -23,6 +23,12 @@ function GoToStepsPage() {
     }, 1000)
     CloseDropdown()
 }
+function GoToQuizzesPage() {
+    setTimeout(() => {
+        window.location.href = '/Quizzes/'
+    }, 1000)
+    CloseDropdown()
+}
 function GoToPianoPage() {
     setTimeout(() => {
         window.location.href = '/Piano/'
