@@ -95,10 +95,6 @@ body {
     transition-duration: 250ms;
 }
 
-.main__welcome__parts__distances:hover {
-    transform: rotate(7deg);
-}
-
 .main__welcome__parts__distances__title {
     font-size: xx-large;
     font-weight: 400;
@@ -128,10 +124,6 @@ body {
     transition-property: transform;
     transition-timing-function: var(--default-transition-timing-function);
     transition-duration: 250ms;
-}
-
-.main__welcome__parts__steps:hover {
-    transform: rotate(7deg);
 }
 
 .main__welcome__parts__steps__title {
@@ -165,10 +157,6 @@ body {
     transition-duration: 250ms;
 }
 
-.main__welcome__parts__piano:hover {
-    transform: rotate(7deg);
-}
-
 .main__welcome__parts__piano__title {
     font-size: xx-large;
     font-weight: 400;
@@ -178,6 +166,41 @@ body {
     transition-property: color;
     transition-timing-function: var(--default-transition-timing-function);
     transition-duration: 180ms;
+}
+
+.main__welcome__parts__quizzes {
+    width: 15vw;
+    direction: rtl;
+    text-align: start;
+    border: 1px black solid;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 2vw;
+    opacity: 0.7;
+    font-size: 14.5px;
+    transition-property: transform;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: 250ms;
+}
+
+.main__welcome__parts__quizzes__title {
+    font-size: xx-large;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: 180ms;
+}
+
+.part:hover {
+    transform: rotate(7deg);
 }
 
 .SVGArrow {
@@ -205,19 +228,7 @@ body {
         margin-right: 0vw;
     }
 
-    .main__welcome__parts__distances {
-        width: 75vw;
-        margin-left: 0vw;
-        margin-top: 0vh;
-    }
-
-    .main__welcome__parts__steps {
-        width: 75vw;
-        margin-left: 0vw;
-        margin-top: 0vh;
-    }
-    
-    .main__welcome__parts__piano {
+    .part {
         width: 75vw;
         margin-left: 0vw;
         margin-top: 0vh;

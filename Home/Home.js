@@ -31,6 +31,17 @@ function MouseLeavePianoHandler() {
     SVGArrowPiano.style.fill = "rgba(255, 255, 255, 1)";
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const quizzesPartTitle = document.getElementById("quizzesPartTitle")
+const SVGArrowQuizzes = document.getElementById("ui-gambling-website-lined-icnos-casinoshunter4")
+function MouseOverQuizzesHandler() {
+    quizzesPartTitle.style.color = "#f9a515"
+    SVGArrowQuizzes.style.fill = "#f9a515";
+}
+function MouseLeaveQuizzesHandler() {
+    quizzesPartTitle.style.color = "rgba(255, 255, 255, 1)"
+    SVGArrowQuizzes.style.fill = "rgba(255, 255, 255, 1)";
+}
+//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function ChangePage() {
     loading.classList.remove("Lhidden");
     loading.classList.add("Lflex");
