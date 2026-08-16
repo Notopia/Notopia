@@ -269,7 +269,7 @@ function ShowFullscreenNote() {
     imgTag.classList.remove("main__result__image");
 }
 function CancelShowingFullscreenNoteButton() {
-    window.location.href = "./Distances.html"
+    window.location.href = "/Distances/index.html"
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const selectedSectionHeader = document.querySelector(".header__sections__distances");
