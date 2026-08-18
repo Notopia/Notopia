@@ -1,9 +1,14 @@
 @import "tailwindcss/theme.css";
 @import "tailwindcss/utilities.css";
 
-.pianoMainButtonShadow{
+.pianoMainButtonShadow {
     box-shadow: 0px 7px 0px 0px #C0C0C0;
 }
-.pianoPrimaryButtonShadow{
+
+.pianoPrimaryButtonShadow {
     box-shadow: 0px 5px 0px 0px #606060;
+}
+
+@theme {
+    --color-main: #ffb638;
 }
