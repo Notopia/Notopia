@@ -43,10 +43,10 @@ body {
 }
 
 .header__logo {
-    width: 10vw;
-    margin-top: 0.7vw;
-    margin-right: 0.5vw;
-    margin-left: 3vw;
+    width: 170px;
+    margin-top: 17px;
+    margin-right: 12px;
+    margin-left: 40px;
 }
 
 .header__logo__image {
@@ -167,14 +167,6 @@ body {
     .header__sections {
         font-size: 2.5vw;
     }
-
-    .header__logo {
-        padding-right: 1vw;
-    }
-
-    .header__logo__image {
-        margin-top: 10px;
-    }
 }
 
 @media(max-width: 500px) and (min-width:200px) {
@@ -183,11 +175,7 @@ body {
     }
 
     .header__logo {
-        width: 23vw;
-    }
-
-    .header__logo__image {
-        margin-top: 1vh;
+        width: 80px;
     }
 
     .header__sections {
@@ -201,17 +189,14 @@ body {
 
 @media(max-width: 900px) and (min-width:500px) {
     .header__logo {
-        width: 20vw;
-    }
-
-    .header__logo__image {
-        margin-top: 10px;
+        width: 147px;
+        padding-bottom: 4px;
     }
 }
 
 @media (max-width:400px) {
     .header {
-        height: 50px;
+        height: 65px;
     }
 
     .header__menu {
@@ -225,8 +210,8 @@ body {
     .header__menu {
         display: none;
     }
-    
-    .dropdown__menu{
+
+    .dropdown__menu {
         display: none;
     }
 }
@@ -243,8 +228,8 @@ body {
     }
 
     .header__logo {
-        width: 25vw;
-        margin-right: 4vw;
+        width: 150px;
+        margin-right: 24px;
     }
 }
 
