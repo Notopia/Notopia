@@ -77,98 +77,23 @@ body {
 }
 
 .main__welcome__parts__distances {
-    width: 15vw;
-    direction: rtl;
-    text-align: start;
-    border: 1px black solid;
-    border-radius: 12px;
-    padding: 12px;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 2vw;
-    opacity: 0.7;
-    transition-property: transform;
-    transition-timing-function: var(--default-transition-timing-function);
-    transition-duration: 250ms;
-}
-
-.main__welcome__parts__distances__title {
-    font-size: xx-large;
-    font-weight: 400;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition-property: color;
-    transition-timing-function: var(--default-transition-timing-function);
-    transition-duration: 180ms;
+    font-size: 14.5px;
 }
 
 .main__welcome__parts__steps {
-    width: 15vw;
-    direction: rtl;
-    text-align: start;
-    border: 1px black solid;
-    border-radius: 12px;
-    padding: 12px;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 2vw;
-    opacity: 0.7;
-    font-size: 15.5px;
-    transition-property: transform;
-    transition-timing-function: var(--default-transition-timing-function);
-    transition-duration: 250ms;
+    font-size: 14.5px;
 }
 
-.main__welcome__parts__steps__title {
-    font-size: xx-large;
-    font-weight: 400;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition-property: color;
-    transition-timing-function: var(--default-transition-timing-function);
-    transition-duration: 180ms;
-}
 
 .main__welcome__parts__piano {
-    width: 15vw;
-    direction: rtl;
-    text-align: start;
-    border: 1px black solid;
-    border-radius: 12px;
-    padding: 12px;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 2vw;
-    opacity: 0.7;
     font-size: 13.5px;
-    transition-property: transform;
-    transition-timing-function: var(--default-transition-timing-function);
-    transition-duration: 250ms;
-}
-
-.main__welcome__parts__piano__title {
-    font-size: xx-large;
-    font-weight: 400;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition-property: color;
-    transition-timing-function: var(--default-transition-timing-function);
-    transition-duration: 180ms;
 }
 
 .main__welcome__parts__quizzes {
+    font-size: 14.5px;
+}
+
+.part {
     width: 15vw;
     direction: rtl;
     text-align: start;
@@ -182,13 +107,12 @@ body {
     gap: 10px;
     margin-left: 2vw;
     opacity: 0.7;
-    font-size: 14.5px;
     transition-property: transform;
     transition-timing-function: var(--default-transition-timing-function);
     transition-duration: 250ms;
 }
 
-.main__welcome__parts__quizzes__title {
+.partTitle {
     font-size: xx-large;
     font-weight: 400;
     cursor: pointer;
@@ -197,6 +121,14 @@ body {
     transition-property: color;
     transition-timing-function: var(--default-transition-timing-function);
     transition-duration: 180ms;
+}
+
+.partText {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .part:hover {
@@ -208,13 +140,7 @@ body {
     margin-right: 5px;
 }
 
-.main__welcome__parts__distances__text {
-    font-size: medium;
-    cursor: default;
-}
-
-
-
+/*-----------------------------------------------------------------------------------------*/
 @media(max-width:400px) {
     #icon {
         width: 20vw;
@@ -243,20 +169,8 @@ body {
     }
 }
 
-@media(max-width:900px) and (min-width:400px) {
-    .main__welcome__parts__distances {
-        width: 75vw;
-        margin-left: 0vw;
-        margin-top: 0vh;
-    }
-
-    .main__welcome__parts__steps {
-        width: 75vw;
-        margin-left: 0vw;
-        margin-top: 0vh;
-    }
-
-    .main__welcome__parts__piano {
+@media(max-width:1100px) and (min-width:400px) {
+    .part {
         width: 75vw;
         margin-left: 0vw;
         margin-top: 0vh;
@@ -267,9 +181,8 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
-        gap: 5vh;
+        gap: 20px;
     }
-
 
     #icon {
         width: 15vw;
