@@ -1,3 +1,4 @@
+//*Verify phone number and email and send a message to user
 function registerInNews() {
     let phoneNumber = document.getElementById("txtPhoneNumber").value;
     let email = document.getElementById("txtEmail").value;
@@ -20,3 +21,8 @@ function registerInNews() {
         alert("لطفا اطلاعات را به شکل صحیح وارد نمایید!")
     }
 }
+//*Set dynamic year for copyright text
+const copyRight = document.querySelector(".privacy__text");
+const date = new Date
+const year = date.getFullYear()
+copyRight.innerHTML = `© ${year} تمامی حقوق مادی و معنوی این سایت متعلق به وب‌سایت نوتوپیا می‌باشد.`
