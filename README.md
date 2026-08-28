@@ -6,6 +6,7 @@ A web-based tool for learning music theory concepts — visualize **scales** and
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ---
 
@@ -21,13 +22,19 @@ A web-based tool for learning music theory concepts — visualize **scales** and
 ## 📸 Screenshots
 
 ### Intervals
-![Intervals](ReadmeImages/Intervals.png)
+<p align="center">
+  <img src="ReadmeImages/Intervals.png" alt="Intervals" width="700" style="border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" />
+</p>
 
 ### Scales
-![Scales](ReadmeImages/Scales.png)
+<p align="center">
+  <img src="ReadmeImages/Scales.png" alt="Scales" width="700" style="border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" />
+</p>
 
 ### Piano
-![Piano](ReadmeImages/Piano.png)
+<p align="center">
+  <img src="ReadmeImages/Piano.png" alt="Piano" width="700" style="border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.25);" />
+</p>
 
 ---
 
