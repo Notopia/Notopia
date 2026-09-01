@@ -6,12 +6,12 @@ export const DistancesHard = {
             id: 1,
             type: "",
             question: "",
-            options: [
-                1 = "",
-                2 = "",
-                3 = "",
-                4 = "",
-            ],
+            options: {
+                1 : "",
+                2 : "",
+                3 : "",
+                4 : "",
+            },
             answer:{
                 correctOption : 1,
                 descriptiveAnswer:"",

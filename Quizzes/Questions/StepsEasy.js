@@ -6,15 +6,15 @@ export const StepsEasy = {
             id: 1,
             type: "",
             question: "",
-            options: [
-                1 = "",
-                2 = "",
-                3 = "",
-                4 = "",
-            ],
-            answer:{
-                correctOption : 1,
-                descriptiveAnswer:"",
+            options: {
+                1: "",
+                2: "",
+                3: "",
+                4: "",
+            },
+            answer: {
+                correctOption: 1,
+                descriptiveAnswer: "",
             }
         },
     ]
