@@ -47,4 +47,4 @@ function TimerTick() {
     sec.innerHTML = s.toString().padStart(2, "0")
 }
 TimerTick()
-setInterval(TimerTick, 1);
+setInterval(TimerTick, 10000000000);
