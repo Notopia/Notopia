@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ffb638">
-    <title>Notopia - کوییزها</title>
+    <title id="pageTitle">Notopia</title>
     <link rel="stylesheet" href="/Styles/output.css">
+    <link rel="stylesheet" href="/Header/Header.css">
     <link rel="icon" href="/images/icon.webp" type="image/x-image" />
     <style>
         *,
@@ -18,8 +19,14 @@
 </head>
 
 <body class="m-0 h-screen bg-[#141414]" onload="HideLoading()">
+    <div class="loading__container">
+        <div class="loading">
+            <lottie-player autoplay loop mode="normal" src="/Animations/Loading.json" style="width: 220px">
+            </lottie-player>
+        </div>
+    </div>
     <header class="w-full bg-white px-4 md:px-8 pt-3 pb-2 flex flex-row-reverse items-center justify-between">
-        <div class="w-30 sm:w-40 md:w-44 xl:w-50">
+        <div class="w-30 sm:w-40 md:w-44 xl:w-50 cursor-pointer">
             <img src="/images/NotopiaLogo.webp" alt="Notopia Logo" class="w-full"
                 onclick="GoToHomePage(), ChangePage()" />
         </div>
@@ -37,7 +44,7 @@
             </div>
             <div class="flex items-center mb-1.5 gap-1 font-semibold text-base md:text-lg xl:text-xl">
                 <div class="flex gap-0.5">
-                    <span>
+                    <span id="min">
                         20
                     </span>
                     <span>'</span>
@@ -46,7 +53,7 @@
                     <span>:</span>
                 </div>
                 <div class="flex gap-0.5 ml-0.5">
-                    <span>
+                    <span id="sec">
                         20
                     </span>
                     <span>''</span>
@@ -58,6 +65,9 @@
 
     </main>
 </body>
+<script src="/Header/Header.js"></script>
 <script src="/Dependencies/lottie-player.js"></script>
+<script type="module" src="/Quizzes/quiz/Timer.js"></script>
+<script src="/Quizzes/quiz/Title.js"></script>
 
 </html>
