@@ -176,6 +176,10 @@ body {
         margin-top: 0vh;
     }
 
+    .part:hover {
+        transform: rotate(2deg);
+    }
+
     .main__welcome__parts {
         justify-content: center;
         display: flex;
