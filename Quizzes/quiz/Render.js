@@ -1,106 +1,77 @@
-<!DOCTYPE html>
-<html lang="fa">
+import { DistancesEasy } from "../Questions/DistancesEasy.js"
+import { DistancesHard } from "../Questions/DistancesHard.js"
+import { StepsEasy } from "../Questions/StepsEasy.js"
+import { StepsHard } from "../Questions/StepsHard.js"
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffb638">
-    <title id="pageTitle">Notopia</title>
-    <link rel="stylesheet" href="/Styles/output.css">
-    <link rel="stylesheet" href="/Header/Header.css">
-    <link rel="icon" href="/images/icon.webp" type="image/x-image" />
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-
-<body class="m-0 h-screen bg-[#141414]" onload="HideLoading()">
-    <div class="loading__container">
-        <div class="loading">
-            <lottie-player autoplay loop mode="normal" src="/Animations/Loading.json" style="width: 220px">
-            </lottie-player>
-        </div>
-    </div>
-    <header class="w-full bg-white px-4 md:px-8 pt-3 pb-2 flex flex-row-reverse items-center justify-between">
-        <div class="w-30 sm:w-40 md:w-44 xl:w-50 cursor-pointer">
-            <img src="/images/NotopiaLogo.webp" alt="Notopia Logo" class="w-full"
-                onclick="GoToHomePage(), ChangePage()" />
-        </div>
-        <div class="flex gap-1 items-center mb-1">
-            <div class="w-8 h-auto md:w-10 xl:w-11">
-                <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M12 9V13M10 2H14M17.6569 7.34315L19 6M12 21C16.4183 21 20 17.4183 20 13C20 8.58172 16.4183 5 12 5C7.58172 5 4 8.58172 4 13C4 17.4183 7.58172 21 12 21Z"
-                            stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                </svg>
-            </div>
-            <div class="flex items-center mb-1.5 gap-1 font-semibold text-base md:text-lg xl:text-xl">
-                <div class="flex gap-0.5">
-                    <span id="min">
-                        20
-                    </span>
-                    <span>'</span>
-                </div>
-                <div class="text-lg font-bold">
-                    <span>:</span>
-                </div>
-                <div class="flex gap-0.5 ml-0.5">
-                    <span id="sec">
-                        20
-                    </span>
-                    <span>''</span>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="w-full py-6 px-2 md:px-6 lg:px-12 xl:px-24 space-y-4 flex flex-col items-center"
-        onclick="CloseDropdown()">
-        <article class="w-full bg-white py-4 2xl:w-350 rounded-xl">
-            <section dir="rtl" class="px-3 sm:px-5">
-                <span class="font-bold text-lg md:text-xl xl:text-2xl">سوال 1:</span>
+//*Get quiz's id
+const paramsString = window.location.search
+const searchParams = new URLSearchParams(paramsString)
+const quizId = searchParams.get("id")
+//*Get questions and level of the quiz and
+let questions = null
+let quizLevel = null
+switch (quizId) {
+    case "1":
+        questions = DistancesEasy.questions
+        quizLevel = "easy"
+        break;
+    case "2":
+        questions = DistancesHard.questions
+        quizLevel = "hard"
+        break;
+    case "3":
+        questions = StepsEasy.questions
+        quizLevel = "easy"
+        break;
+    case "4":
+        questions = StepsHard.questions
+        quizLevel = "hard"
+        break;
+}
+//*Create a DOM for include in main tag
+let DOM = ""
+questions.map((question) => {
+    let article = `<article class="w-full bg-white py-4 2xl:w-350 rounded-xl">`
+    article += `<section dir="rtl" class="px-3 sm:px-5">
+                <span class="font-bold text-lg md:text-xl xl:text-2xl">سوال ${question.id}:</span>
                 <span class="text-base md:text-lg">
-                    کدام کلاویه از C، فاصله‌ی چهارم درست می‌سازد؟(روی کلاویه صحیح کلیک کنید.)
+                    ${question.question}
                 </span>
-            </section>
-            <section dir="rtl" class="w-full grid grid-cols-1 lg:grid-cols-2 lg:place-content-center space-y-1.5 px-3 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+            </section>`
+    if (question.type == "test") {
+        article += `<section dir="rtl" class="w-full grid grid-cols-1 lg:grid-cols-2 lg:place-content-center space-y-1.5 px-3 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
                 <label class="flex gap-0.5 items-center">
                     <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
                     <div>
                         <span>1)</span>
-                        <span>پنجم درست</span>
+                        <span>${question.options[1]}</span>
                     </div>
                 </label>
                 <label class="flex gap-0.5 items-center">
                     <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
                     <div>
                         <span>2)</span>
-                        <span>پنجم افزوده</span>
+                        <span>${question.options[2]}</span>
                     </div>
                 </label>
                 <label class="flex gap-0.5 items-center">
                     <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
                     <div>
                         <span>3)</span>
-                        <span>هشتم درست</span>
+                        <span>${question.options[3]}</span>
                     </div>
                 </label>
                 <label class="flex gap-0.5 items-center">
                     <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
                     <div>
                         <span>4)</span>
-                        <span>هشتم افزوده</span>
+                        <span>${question.options[4]}</span>
                     </div>
                 </label>
-            </section>
-            <section class="w-full hidden items-center justify-center mt-3 sm:mt-8 xl:mt-12">
+            </section>`
+    }
+    else if (question.type == "piano") {
+        article += `<section class="w-full hidden items-center justify-center mt-3 sm:mt-8 xl:mt-12">
                 <div
                     class="max-[360px]:w-full w-fit max-[400px]:px-3 px-8 sm:px-10 bg-[#141414] flex justify-center items-center py-6 border-white border-6 rounded-2xl">
                     <div class="flex gap-1 relative">
@@ -183,7 +154,7 @@
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
-                                class="mb-4 text-sm sm:text-base">C#</span></div>
+                                class="mb-4 text-sm sm:text-base">C#${quizLevel == "hard" ? "(Db)" : ""}</span></div>
                         <div id="4"
                             class="absolute top-0 max-[360px]:ml-15 ml-17 sm:ml-31.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow"
                             onmousedown="PrimaryButtonMousedownHandler(event)"
@@ -193,7 +164,7 @@
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
-                                class="mb-4 text-sm sm:text-base">D#</span></div>
+                                class="mb-4 text-sm sm:text-base">D#${quizLevel == "hard" ? "(Eb)" : ""}</span></div>
                         <div id="7"
                             class="absolute top-0 max-[360px]:ml-35 ml-39 sm:ml-69.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow"
                             onmousedown="PrimaryButtonMousedownHandler(event)"
@@ -203,7 +174,7 @@
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
-                                class="mb-4 text-sm sm:text-base">E#</span></div>
+                                class="mb-4 text-sm sm:text-base">E#${quizLevel == "hard" ? "(Db)" : ""}</span></div>
                         <div id="9"
                             class="absolute top-0 max-[360px]:ml-45 ml-50 sm:ml-88.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow"
                             onmousedown="PrimaryButtonMousedownHandler(event)"
@@ -213,7 +184,7 @@
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
-                                class="mb-4 text-sm sm:text-base">G#</span></div>
+                                class="mb-4 text-sm sm:text-base">G#${quizLevel == "hard" ? "(Ab)" : ""}</span></div>
                         <div id="11"
                             class="absolute top-0 max-[360px]:ml-55 ml-61 sm:ml-108 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow"
                             onmousedown="PrimaryButtonMousedownHandler(event)"
@@ -223,18 +194,14 @@
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
-                                class="mb-4 text-sm sm:text-base">A#</span></div>
+                                class="mb-4 text-sm sm:text-base">A#${quizLevel == "hard" ? "(Bb)" : ""}</span></div>
                     </div>
                 </div>
-            </section>
-        </article>
-    </main>
-</body>
-<script src="/Header/Header.js"></script>
-<script src="/Dependencies/lottie-player.js"></script>
-<script type="module" src="/Quizzes/quiz/Timer.js"></script>
-<script src="/Quizzes/quiz/Title.js"></script>
-<script src="/Quizzes/quiz/Piano.js"></script>
-<script type="module" src="/Quizzes/quiz/Render.js"></script>
-
-</html>
+            </section>`
+    }
+    article += `</article>`
+    DOM += article
+})
+//*Add articles to main tag
+const main = document.querySelector("main")
+main.innerHTML = DOM
