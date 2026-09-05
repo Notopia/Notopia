@@ -70,8 +70,8 @@ questions.map((question) => {
                 </label>
             </section>`
     }
-    else if (question.type == "piano") {
-        article += `<section class="w-full hidden items-center justify-center mt-3 sm:mt-8 xl:mt-12">
+    else if(question.type == "piano") {
+        article += `<section class="w-full flex items-center justify-center mt-3 sm:mt-8 xl:mt-12">
                 <div
                     class="max-[360px]:w-full w-fit max-[400px]:px-3 px-8 sm:px-10 bg-[#141414] flex justify-center items-center py-6 border-white border-6 rounded-2xl">
                     <div class="flex gap-1 relative">
@@ -174,7 +174,7 @@ questions.map((question) => {
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
-                                class="mb-4 text-sm sm:text-base">E#${quizLevel == "hard" ? "(Db)" : ""}</span></div>
+                                class="mb-4 text-sm sm:text-base">F#${quizLevel == "hard" ? "(Gb)" : ""}</span></div>
                         <div id="9"
                             class="absolute top-0 max-[360px]:ml-45 ml-50 sm:ml-88.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow"
                             onmousedown="PrimaryButtonMousedownHandler(event)"
