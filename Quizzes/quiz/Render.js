@@ -35,7 +35,7 @@ questions.map((question) => {
     article += `<section dir="rtl" class="px-3 sm:px-5">
                 <span class="font-bold text-lg md:text-xl xl:text-2xl">سوال ${question.id}:</span>
                 <span class="text-base md:text-lg">
-                    ${question.question}
+                    ${question.question}${question.type == "piano" ? "(روی کلاویه صحیح کلیک کنید.)" : ""}
                 </span>
             </section>`
     if (question.type == "test") {
@@ -70,7 +70,7 @@ questions.map((question) => {
                 </label>
             </section>`
     }
-    else if(question.type == "piano") {
+    else if (question.type == "piano") {
         article += `<section class="w-full flex items-center justify-center mt-3 sm:mt-8 xl:mt-12">
                 <div
                     class="max-[360px]:w-full w-fit max-[400px]:px-3 px-8 sm:px-10 bg-[#141414] flex justify-center items-center py-6 border-white border-6 rounded-2xl">
