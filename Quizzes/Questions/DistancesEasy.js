@@ -20,7 +20,7 @@ export const DistancesEasy = {
         {
             id: 2,
             type: "piano",
-            question: "کدام نت فاصله‌ی بزرگ کوچک بالای C است؟",
+            question: "کدام نت فاصله‌ سوم بزرگ بالای C است؟",
             answer: {
                 correctOption: "E",
                 descriptiveAnswer: "",
