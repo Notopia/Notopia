@@ -41,28 +41,28 @@ questions.map((question) => {
     if (question.type == "test") {
         article += `<section dir="rtl" class="w-full grid grid-cols-1 lg:grid-cols-2 lg:place-content-center space-y-1.5 px-3 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
                 <label class="flex gap-0.5 items-center">
-                    <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
+                    <input type="radio" title="option1" name="question${question.id}" class="w-fit h-fit mb-1">
                     <div>
                         <span>1)</span>
                         <span>${question.options[1]}</span>
                     </div>
                 </label>
                 <label class="flex gap-0.5 items-center">
-                    <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
+                    <input type="radio" title="option1" name="question${question.id}" class="w-fit h-fit mb-1">
                     <div>
                         <span>2)</span>
                         <span>${question.options[2]}</span>
                     </div>
                 </label>
                 <label class="flex gap-0.5 items-center">
-                    <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
+                    <input type="radio" title="option1" name="question${question.id}" class="w-fit h-fit mb-1">
                     <div>
                         <span>3)</span>
                         <span>${question.options[3]}</span>
                     </div>
                 </label>
                 <label class="flex gap-0.5 items-center">
-                    <input type="radio" title="option1" name="question1" class="w-fit h-fit mb-1">
+                    <input type="radio" title="option1" name="question${question.id}" class="w-fit h-fit mb-1">
                     <div>
                         <span>4)</span>
                         <span>${question.options[4]}</span>
