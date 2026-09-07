@@ -9,7 +9,7 @@ function MainButtonMousedownHandler(event) {
     //*Remove shadow for click on piano button's vibe
     clickedButton.classList.remove("pianoMainButtonShadow");
     //*Play audio when click on piano button
-    PlayAudio(clickedButton.id)
+    PlayAudio(clickedButton.title)
     //*Change selected button's color
     SelectButton(event.currentTarget.id)
 }
@@ -24,7 +24,7 @@ function PrimaryButtonMousedownHandler(event) {
     //*Remove shadow for click on piano button's vibe
     clickedButton.classList.remove("pianoPrimaryButtonShadow");
     //*Play audio when click on piano button
-    PlayAudio(clickedButton.id)
+    PlayAudio(clickedButton.title)
     //*Change selected button's color
     SelectButton(event.currentTarget.id)
 }
@@ -43,7 +43,7 @@ function SelectButton(selectedButtonId) {
     //*First remove previous selected button color
     const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     ids.map((id) => {
-        const button = document.getElementById(id)
+        const button = document.getElementById(`${selectedButtonId.split('-')[0]}-${id}`)
         if (id == 1 || id == 3 || id == 5 || id == 6 || id == 8 || id == 10 || id == 12) {
             button.classList.remove("bg-main", "hover:text-white")
             button.classList.add("bg-white", "hover:text-main")
