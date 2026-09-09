@@ -36,7 +36,7 @@ function TimerTick() {
     s -= 1
     if (s == 0 && m == 0) {
         alert("زمان شما به پایان رسید.")
-        window.location.href = "/Quizzes/quiz/answer-sheet/"
+        window.location.replace("/Quizzes/quiz/answer-sheet/")
     }
     else if (s == -1) {
         m -= 1
