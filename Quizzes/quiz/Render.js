@@ -68,10 +68,13 @@ questions.map((question) => {
                         <span>${question.options[4]}</span>
                     </div>
                 </label>
+                <div class="w-full text-center mt-3 lg:mt-6 col-span-2">
+                    <button id="removeAnswer" name=${question.id} data-question-type="test" class="hidden bg-red-500 text-neutral-900 px-3 py-1.5 text-base lg:text-lg font-semibold border-none rounded-2xl cursor-pointer hover:bg-red-600 focus:ring-4 ring-red-700 outline-none transition-all duration-300" title="حذف جواب">حذف جواب </button>
+                </div>
             </section>`
     }
     else if (question.type == "piano") {
-        article += `<section class="w-full flex items-center justify-center mt-3 sm:mt-8 xl:mt-12">
+        article += `<section class="w-full flex flex-col items-center justify-center mt-3 sm:mt-8 xl:mt-12">
                 <div
                     class="max-[360px]:w-full w-fit max-[400px]:px-3 px-8 sm:px-10 bg-[#141414] flex justify-center items-center py-6 border-white border-6 rounded-2xl">
                     <div class="flex gap-1 relative">
@@ -146,7 +149,7 @@ questions.map((question) => {
                                 class="mb-4 text-sm sm:text-base">B</span>
                         </div>
                         <div id="${question.id}-2" title="2"
-                            class="absolute top-0 max-[360px]:ml-5 0 ml-6 sm:ml-12.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
+                            class="absolute top-0 max-[360px]:ml-5 ml-6 sm:ml-12.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
                             onmousedown="PrimaryButtonMousedownHandler(event)"
                             onmouseup="PrimaryButtonMouseupHandler(event)"
                             onmouseleave="PrimaryButtonMouseupHandler(event)"
@@ -196,6 +199,9 @@ questions.map((question) => {
                             onpointercancel="PrimaryButtonMouseupHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">A#${quizLevel == "hard" ? "(Bb)" : ""}</span></div>
                     </div>
+                </div>
+                <div class="w-full text-center mt-3">
+                    <button id="removeAnswer" data-question-type="piano" name=${question.id} class="hidden bg-red-500 text-neutral-900 px-3 py-1.5 text-base lg:text-lg font-semibold border-none rounded-2xl cursor-pointer hover:bg-red-600 focus:ring-4 ring-red-700 outline-none transition-all duration-300" title="حذف جواب">حذف جواب </button>
                 </div>
             </section>`
     }

@@ -41,9 +41,17 @@ function PlayAudio(id) {
 //*Select piano button
 function SelectButton(selectedButtonId) {
     //*First remove previous selected button color
+    UnSelectButtons(selectedButtonId.split('-')[0])
+    //*Add orange color to selected button
+    const selectedButton = document.getElementById(selectedButtonId)
+    selectedButton.classList.remove("bg-white", "text-white", "bg-neutral-950", "hover:text-main")
+    selectedButton.classList.add("bg-main", "text-gray-950", "hover:text-white")
+}
+function UnSelectButtons(questionId){
+    //*Change color and etc of piano buttons
     const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     ids.map((id) => {
-        const button = document.getElementById(`${selectedButtonId.split('-')[0]}-${id}`)
+        const button = document.getElementById(`${questionId}-${id}`)
         if (id == 1 || id == 3 || id == 5 || id == 6 || id == 8 || id == 10 || id == 12) {
             button.classList.remove("bg-main", "hover:text-white")
             button.classList.add("bg-white", "hover:text-main")
@@ -53,8 +61,4 @@ function SelectButton(selectedButtonId) {
             button.classList.add("bg-neutral-950", "text-white", "hover:text-main")
         }
     })
-    //*Add orange color to selected button
-    const selectedButton = document.getElementById(selectedButtonId)
-    selectedButton.classList.remove("bg-white", "text-white", "bg-neutral-950", "hover:text-main")
-    selectedButton.classList.add("bg-main", "text-gray-950", "hover:text-white")
 }
