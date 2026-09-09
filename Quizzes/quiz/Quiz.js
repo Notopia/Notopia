@@ -29,6 +29,8 @@ switch (quizId) {
     case "4":
         numberOfQuestions = StepsHard.questions.length
         break;
+    default:
+        window.location.href = "/404.html"
 }
 //*Fill answers array with 0
 const answers = []
@@ -52,5 +54,5 @@ function SetAnswers(event) {
 //*Handle click on register answers button
 document.getElementById("submit").addEventListener("click", () => {
     sessionStorage.setItem("quizAnswers", answers)
-    window.location.href = `/Quizzes/quiz/answer-sheet?id=${quizId}`
+    window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
 })
