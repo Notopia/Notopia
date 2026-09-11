@@ -56,6 +56,7 @@ function SetAnswers(event) {
         //*Show remove answer button
         SetRemoveAnswerButtonStatus(questionId, true)
     }
+    sessionStorage.setItem("quizAnswers", answers)
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Handle click on remove answer
@@ -73,6 +74,7 @@ document.querySelectorAll("#removeAnswer").forEach(button => {
             UnSelectButtons(questionId)
         }
         answers[questionId - 1] = 0
+        sessionStorage.setItem("quizAnswers", answers)
         SetRemoveAnswerButtonStatus(questionId, false)
     })
 });
@@ -107,6 +109,5 @@ function SetRemoveAnswerButtonStatus(questionId, newStatus) {
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Handle click on register answers button
 document.getElementById("submit").addEventListener("click", () => {
-    sessionStorage.setItem("quizAnswers", answers)
     window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
 })
