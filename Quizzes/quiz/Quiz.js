@@ -108,6 +108,6 @@ function SetRemoveAnswerButtonStatus(questionId, newStatus) {
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Handle click on register answers button
 document.getElementById("submit").addEventListener("click", () => {
-    sessionStorage.setItem("quizAnswers", answers)
+    sessionStorage.setItem("quizAnswers", JSON.stringify(answers))
     window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
 })

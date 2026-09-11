@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="/Header/Header.css" />
     <link rel="stylesheet" href="/Footer/Footer.css">
     <link rel="icon" href="/images/icon.webp" type="image/x-image" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 
-<body class="m-0 h-screen" onscroll="CloseDropdown()" onload="HideLoading()">
+<body class="m-0 max-w-svw h-screen" onscroll="CloseDropdown()" onload="HideLoading()">
     <div class="loading__container">
         <div class="loading">
             <lottie-player autoplay loop mode="normal" src="/Animations/Loading.json" style="width: 220px">
@@ -292,8 +293,13 @@
             </a>
         </div>
     </div>
-    <main>
-
+    <main class="border-t min-h-full border-gray-400 flex flex-col items-center bg-[#141414]" onclick="CloseDropdown()">
+        <h1 class="text-3xl lg:text-4xl text-gray-100 lg:mt-8">پاسخنامه آزمون</h1>
+        <section class="w-64 h-64 flex items-center justify-center bg-white p-4 rounded-xl" id="chart">
+            <canvas id="chartjs"></canvas>
+        </section>
+        <section id="detailed"></section>
+        <section id="optional"></section>
     </main>
     <footer class="footer" onclick="CnacelShowingAboutBox(), CloseDropdown()" id="footer">
         <form>
@@ -370,9 +376,10 @@
         </div>
     </footer>
 </body>
-<script src="/Quizzes/quiz/answer-sheet/AnswerSheet.js"></script>
 <script src="/Header/Header.js"></script>
 <script src="/Footer/Footer.js"></script>
 <script src="/Dependencies/lottie-player.js"></script>
+<script type="module" src="/Quizzes/quiz/answer-sheet/AnswerSheet.js"></script>
+<script type="module" src="/Quizzes/quiz/answer-sheet/Chart.js"></script>
 
 </html>
