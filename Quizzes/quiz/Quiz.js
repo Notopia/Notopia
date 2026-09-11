@@ -104,10 +104,10 @@ function SetRemoveAnswerButtonStatus(questionId, newStatus) {
     else if (newStatus === false) {
         button.classList.add("hidden")
     }
-    console.log(answers)
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Handle click on register answers button
 document.getElementById("submit").addEventListener("click", () => {
+    sessionStorage.setItem("quizAnswers", answers)
     window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
 })
