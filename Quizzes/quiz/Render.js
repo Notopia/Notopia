@@ -39,7 +39,7 @@ questions.map((question) => {
                 </span>
             </section>`
     if (question.type == "test") {
-        article += `<section dir="rtl" class="w-full grid grid-cols-1 lg:grid-cols-2 lg:place-content-center space-y-1.5 px-3 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+        article += `<section dir="rtl" class="w-full grid grid-cols-1 lg:grid-cols-2 lg:place-content-center space-y-1.5 space-y-reverse px-3 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
                 <label class="flex gap-0.5 items-center" title="${question.id}-1">
                     <input type="radio" title="option1" name="question${question.id}" class="w-fit h-fit mb-1">
                     <div>
@@ -68,7 +68,7 @@ questions.map((question) => {
                         <span>${question.options[4]}</span>
                     </div>
                 </label>
-                <div class="w-full text-center mt-3 lg:mt-6 col-span-2">
+                <div class="w-full text-center mt-3 lg:mt-6 lg:col-span-2">
                     <button id="removeAnswer" name=${question.id} data-question-type="test" class="hidden bg-red-500 text-neutral-900 px-3 py-1.5 text-base lg:text-lg font-semibold border-none rounded-2xl cursor-pointer hover:bg-red-600 focus:ring-4 ring-red-700 outline-none transition-all duration-300" title="حذف جواب">حذف جواب </button>
                 </div>
             </section>`
