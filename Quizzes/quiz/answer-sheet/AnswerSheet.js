@@ -27,6 +27,7 @@ switch (quizId) {
 }
 //*Get user answers
 const userAnswers = JSON.parse(sessionStorage.getItem("quizAnswers"))
+//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Get how many of user's answer are correct or mistake or blank
 export const shortResult = {
     correct: 0,
@@ -43,6 +44,12 @@ questions.forEach(question => {
     else {
         shortResult.mistake += 1
     }
+});
+//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//*Get the correct answer and user answer for use in Detailed and Key-answer sheet
+export const completeResult = []
+questions.forEach(question => {
+    completeResult.push(`${question.answer.correctOption}-${userAnswers[question.id - 1]}`)
 });
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const selectedSectionHeader = document.querySelector(".header__sections__quizzes");
