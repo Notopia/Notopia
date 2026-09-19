@@ -25,12 +25,14 @@ switch (quizId) {
     default:
         window.location.href = "/404.html"
 }
+export let quizStatus = true
 //*Get user answers
 const userAnswers = JSON.parse(sessionStorage.getItem("quizAnswers"))
+//*Get quiz id from sessionStorage
+const savedQuizId = sessionStorage.getItem("quizId")
 //*Show message to user if data in storage has problem
 const DOM = document.getElementById("main")
-export let quizStatus = true
-if (!userAnswers) {
+if (!userAnswers || quizId != savedQuizId) {
     quizStatus = false
     DOM.innerHTML = `<lottie-player autoplay mode="normal" src="/Animations/AnswersNotFound.json" class="w-96 sm:w-96 lg:w-100 mt-6 max-w-full">
         </lottie-player>

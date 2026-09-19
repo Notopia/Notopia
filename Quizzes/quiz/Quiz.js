@@ -111,6 +111,7 @@ document.getElementById("submit").addEventListener("click", (event) => {
     const userDecide = confirm("آیا می‌خواهید پاسخ‌های خود را ثبت نمایید؟")
     if (userDecide) {
         sessionStorage.setItem("quizAnswers", JSON.stringify(answers))
+        sessionStorage.setItem("quizId",quizId)
         window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
     }
 })
