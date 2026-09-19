@@ -38,7 +38,7 @@ if (completeResult != null) {
         </span>
         </section>
         <section dir="rtl" class="px-2 pt-4 pb-4 flex flex-col gap-1">`
-        const [correctAnswer, userAnswer, questionType] = completeResult[question.id - 1].split('-')
+        let [correctAnswer, userAnswer] = completeResult[question.id - 1].split('-')
         if (question.type == "test") {
             for (let i = 1; i <= 4; i++) {
                 if (correctAnswer == userAnswer) {
@@ -237,9 +237,64 @@ if (completeResult != null) {
                 }
             }
         }
+        else if (question.type == "piano") {
+            DOM += `<section dir="ltr" class="w-full flex flex-col items-center justify-center mt-3 sm:mt-8 xl:mt-12 pointer-events-none">
+                <div
+                    class="max-[320px]:w-full max-[360px]:px-1.5 w-fit max-[400px]:px-3 px-4 sm:px-10 bg-[#141414] flex justify-center items-center py-6 border-white border-6 rounded-2xl">
+                    <div class="flex gap-1 relative">
+                        <div id="${question.id}-1" title="1"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">C</span>
+                        </div>
+                        <div id="${question.id}-3" title="3"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">D</span>
+                        </div>
+                        <div id="${question.id}-5" title="5"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">E</span>
+                        </div>
+                        <div id="${question.id}-6" title="6"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">F</span>
+                        </div>
+                        <div id="${question.id}-8" title="8"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">G</span>
+                        </div>
+                        <div id="${question.id}-10" title="10"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">A</span>
+                        </div>
+                        <div id="${question.id}-12" title="12"
+                            class="sm:w-16.5 max-[360px]:w-7.5 w-8.5 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">B</span>
+                        </div>
+                        <div id="${question.id}-2" title="2"
+                            class="absolute top-0 max-[360px]:ml-4 ml-4.5 sm:ml-11 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">C#${quizId == 2 || quizId == 4 ? "(Db)" : ""}</span></div>
+                        <div id="${question.id}-4" title="4"
+                            class="absolute top-0 max-[360px]:ml-12.5 ml-14 sm:ml-29 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">D#${quizId == 2 || quizId == 4 ? "(Eb)" : ""}</span></div>
+                        <div id="${question.id}-7" title="7"
+                            class="absolute top-0 max-[360px]:ml-29.5 ml-33 sm:ml-63.5 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">F#${quizId == 2 || quizId == 4 ? "(Gb)" : ""}</span></div>
+                        <div id="${question.id}-9" title="9"
+                            class="absolute top-0 max-[360px]:ml-38 ml-42.5 sm:ml-81.5 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">G#${quizId == 2 || quizId == 4 ? "(Ab)" : ""}</span></div>
+                        <div id="${question.id}-11" title="11"
+                            class="absolute top-0 max-[360px]:ml-47 ml-52 sm:ml-99 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
+                                class="mb-4 text-sm sm:text-base">A#${quizId == 2 || quizId == 4 ? "(Bb)" : ""}</span></div>
+                    </div>
+                </div>
+                <div class="w-full text-center mt-3">
+                    <button id="removeAnswer" data-question-type="piano" name=${question.id} class="hidden bg-red-500 text-neutral-900 px-3 py-1.5 text-base lg:text-lg font-semibold border-none rounded-2xl cursor-pointer hover:bg-red-600 focus:ring-4 ring-red-700 outline-none transition-all duration-300" title="حذف جواب">حذف جواب </button>
+                </div>
+            </section>`
+        }
         //*Add section closing tag
         DOM += `</section>`
-        //*Complete answer
+        //*Add complete answer
         if (question.answer.descriptiveAnswer != "" && question.answer.descriptiveAnswer != " ") {
             DOM += `<section dir="rtl" class="px-3 sm:px-5 pt-4 flex flex-col justify-center border-t pb-3 border-gray-400">
                             <h3 class="m-0 p-0">پاسخ تشریحی:</h3>
@@ -251,4 +306,47 @@ if (completeResult != null) {
     })
     //*Fill detailed section tag with DOM
     document.getElementById("detailed").innerHTML = DOM
+    //*Show user answer and correct answer on piano
+    questions.map((question) => {
+        //*Check question's type
+        if (question.type == "piano") {
+            //*Get results
+            let [correctAnswer, userAnswer] = completeResult[question.id - 1].split('-')
+            //*Set key id instead of key text
+            correctAnswer = GetPianoKeyId(correctAnswer)
+            userAnswer = GetPianoKeyId(userAnswer)
+            //*Handle color of piano buttons
+            if (correctAnswer == userAnswer || userAnswer == 0) {
+                const goalKey = document.getElementById(`${question.id}-${correctAnswer}`)
+                goalKey.classList.remove("bg-neutral-950", "bg-white")
+                goalKey.classList.add("bg-green-400")
+            }
+            else if(correctAnswer != userAnswer){
+                const wrongKey = document.getElementById(`${question.id}-${userAnswer}`)
+                const correctKey = document.getElementById(`${question.id}-${correctAnswer}`)
+                wrongKey.classList.remove("bg-neutral-950", "bg-white")
+                correctKey.classList.remove("bg-neutral-950", "bg-white")
+                wrongKey.classList.add("bg-red-400")
+                correctKey.classList.add("bg-green-400")
+            }
+        }
+    })
+}
+//*Get id of the key of piano
+function GetPianoKeyId(keyText) {
+    const easyModeText = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+    const hardModeText = ["C", "C#(Db)", "D", "D#(Eb)", "E", "F", "F#(Gb)", "G", "G#(Ab)", "A", "A#(Bb)", "B"]
+    if (keyText == 0) {
+        return 0
+    }
+    for (let i = 0; i <= 11; i++) {
+        if (easyModeText[i] == keyText) {
+            return i + 1
+        }
+    }
+    for (let i = 0; i <= 11; i++) {
+        if (hardModeText[i] == keyText) {
+            return i + 1
+        }
+    }
 }
