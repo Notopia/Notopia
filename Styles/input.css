@@ -1,6 +1,26 @@
 @import "tailwindcss/theme.css";
 @import "tailwindcss/utilities.css";
 
+@font-face {
+    font-family: Sahel;
+    src: url('/Fonts/Sahel/sahel-font-v3.3.1-Fontjo.com/Sahel.eot');
+    src: url('/Fonts/Sahel/sahel-font-v3.3.1-Fontjo.com/Sahel.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/Sahel/sahel-font-v3.3.1-Fontjo.com/Sahel.woff2') format('woff2'),
+        url('/Fonts/Sahel/sahel-font-v3.3.1-Fontjo.com/Sahel.woff') format('woff'),
+        url('/Fonts/Sahel/sahel-font-v3.3.1-Fontjo.com/Sahel.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@theme {
+    --font-sans: 'Sahel', sans-serif;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-sans);
+    }
+}
+
 .pianoMainButtonShadow {
     box-shadow: 0px 7px 0px 0px #C0C0C0;
 }
