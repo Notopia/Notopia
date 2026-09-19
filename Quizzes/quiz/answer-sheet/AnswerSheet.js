@@ -27,30 +27,53 @@ switch (quizId) {
 }
 //*Get user answers
 const userAnswers = JSON.parse(sessionStorage.getItem("quizAnswers"))
+//*Show message to user if data in storage has problem
+const DOM = document.getElementById("main")
+export let quizStatus = true
+if (!userAnswers) {
+    quizStatus = false
+    DOM.innerHTML = `<lottie-player autoplay loop mode="normal" src="/Animations/AnswersNotFound.json" class="w-96 sm:w-96 lg:w-100 mt-6 max-w-full">
+        </lottie-player>
+        <div class="flex flex-col justify-center items-center text-gray-200">
+            <h1 dir="rtl" class="text-lg m-0">خطایی در دریافت پاسخ های شما رخ داد!</h1>
+        </div>
+        <div class="gap-5 w-full mt-8 flex flex-col md:flex-row mb-34">
+            <button
+                class="text-lg mx-auto w-fit px-4 py-2 border-2 border-gray-400 rounded-xl outline-none cursor-pointer hover:bg-gray-200 hover:scale-105 focus:ring-6 ring-offset-0 focus:border-none ring-main transition-all bg-white"
+                onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه کوییزها</button>
+            <button
+                class="text-lg mx-auto w-fit px-4 py-2 border-2 border-gray-400 rounded-xl outline-none cursor-pointer hover:bg-gray-200 hover:scale-105 focus:ring-6 ring-offset-0 focus:border-none ring-main transition-all bg-white"
+                onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه اصلی</button>
+        </div>`
+}
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Get how many of user's answer are correct or mistake or blank
-export const shortResult = {
-    correct: 0,
-    mistake: 0,
-    blank: 0
+export let shortResult = null
+export let completeResult = null
+if (quizStatus) {
+    shortResult = {
+        correct: 0,
+        mistake: 0,
+        blank: 0
+    }
+    questions.forEach(question => {
+        if (question.answer.correctOption == userAnswers[question.id - 1]) {
+            shortResult.correct += 1
+        }
+        else if (userAnswers[question.id - 1] == 0) {
+            shortResult.blank += 1
+        }
+        else {
+            shortResult.mistake += 1
+        }
+    });
+    //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //*Get the correct answer and user answer for use in Detailed and Key-answer sheet
+    completeResult = []
+    questions.forEach(question => {
+        completeResult.push(`${question.answer.correctOption}-${userAnswers[question.id - 1]}`)
+    });
 }
-questions.forEach(question => {
-    if (question.answer.correctOption == userAnswers[question.id - 1]) {
-        shortResult.correct += 1
-    }
-    else if (userAnswers[question.id - 1] == 0) {
-        shortResult.blank += 1
-    }
-    else {
-        shortResult.mistake += 1
-    }
-});
-//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//*Get the correct answer and user answer for use in Detailed and Key-answer sheet
-export const completeResult = []
-questions.forEach(question => {
-    completeResult.push(`${question.answer.correctOption}-${userAnswers[question.id - 1]}`)
-});
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const selectedSectionHeader = document.querySelector(".header__sections__quizzes");
 const selectedSectionDropdown = document.querySelector("#quizzesPart");
