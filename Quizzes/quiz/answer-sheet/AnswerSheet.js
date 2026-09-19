@@ -32,7 +32,7 @@ const DOM = document.getElementById("main")
 export let quizStatus = true
 if (!userAnswers) {
     quizStatus = false
-    DOM.innerHTML = `<lottie-player autoplay loop mode="normal" src="/Animations/AnswersNotFound.json" class="w-96 sm:w-96 lg:w-100 mt-6 max-w-full">
+    DOM.innerHTML = `<lottie-player autoplay mode="normal" src="/Animations/AnswersNotFound.json" class="w-96 sm:w-96 lg:w-100 mt-6 max-w-full">
         </lottie-player>
         <div class="flex flex-col justify-center items-center text-gray-200">
             <h1 dir="rtl" class="text-lg m-0">خطایی در دریافت پاسخ های شما رخ داد!</h1>
