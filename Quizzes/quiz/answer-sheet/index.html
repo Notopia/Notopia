@@ -294,18 +294,20 @@
         </div>
     </div>
     <main
-        class="border-t min-h-full max-w-full border-gray-400 flex flex-col gap-3 items-center bg-[#141414] px-5 pt-6 pb-16"
+        class="border-t min-h-full max-w-full border-gray-400 bg-[#141414] flex flex-col items-center"
         onclick="CloseDropdown()" id="main">
         <h1 class="text-3xl lg:text-4xl text-gray-100 lg:mt-8">پاسخنامه آزمون</h1>
-        <section class="w-full h-64 flex items-center justify-center bg-white p-4 rounded-xl box-border" id="chart">
-            <canvas id="chartjs"></canvas>
-        </section>
-        <section
-            class="max-w-full w-full bg-white px-2.5 py-3 rounded-xl border-none outline-none box-border flex flex-col gap-9 pb-8"
-            id="detailed">
-        </section>
-        <section class="max-w-full w-full" id="optional">
-        </section>
+        <div class="xl:grid xl:grid-cols-2 xl:grid-rows-[auto_auto_1fr] lg:space-y-3 flex flex-col gap-3 items-center xl:items-start px-5 pt-6 pb-16">
+            <section class="w-full h-64 xl:col-start-1 xl:row-start-1 flex items-center justify-center bg-white p-4 rounded-xl box-border" id="chart">
+                <canvas id="chartjs"></canvas>
+            </section>
+            <section
+                class="max-w-full w-full xl:col-start-2 xl:row-start-1 xl:row-span-3 bg-white px-2.5 py-3 rounded-xl border-none outline-none box-border flex flex-col gap-9 pb-8"
+                id="detailed">
+            </section>
+            <section class="max-w-full w-full xl:col-start-1 xl:row-start-2" id="optional">
+            </section>
+        </div>
     </main>
     <footer class="footer" onclick="CnacelShowingAboutBox(), CloseDropdown()" id="footer">
         <form>
