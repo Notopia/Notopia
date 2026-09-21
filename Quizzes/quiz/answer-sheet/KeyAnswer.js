@@ -39,7 +39,11 @@ if (completeResult != null) {
         let [correctAnswer, userAnswer] = completeResult[question.id - 1].split('-')
         //*Handle each box color
         for (let i = 1; i <= 4; i++) {
-            if (correctAnswer == userAnswer) {
+            if (correctAnswer != 1 && correctAnswer != 2 && correctAnswer != 3 && correctAnswer != 4) {
+                DOM += `<div class="w-full text-center">سوال غیرتستی</div>`
+                break
+            }
+            else if (correctAnswer == userAnswer) {
                 if (i == correctAnswer) {
                     DOM += `<div class="w-7 h-4 bg-green-400 border rounded-sm flex items-center justify-center">
                                 <svg width="15px" height="15px" class="mt-[0.5px]"
@@ -60,10 +64,6 @@ if (completeResult != null) {
                 else {
                     DOM += `<div class="w-7 h-4 border rounded-sm"></div>`
                 }
-            }
-            else if (correctAnswer != 1 && correctAnswer != 2 && correctAnswer != 3 && correctAnswer != 4) {
-                DOM += `<div class="w-full text-center">سوال غیرتستی</div>`
-                break
             }
             else if (userAnswer == 0) {
                 if (i == correctAnswer) {
