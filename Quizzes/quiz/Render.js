@@ -80,8 +80,6 @@ questions.map((question) => {
                     <div class="flex gap-1 relative">
                         <div id="${question.id}-1" title="1"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -90,8 +88,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-3" title="3"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -100,8 +96,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-5" title="5"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -110,8 +104,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-6" title="6"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -120,8 +112,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-8" title="8"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -130,8 +120,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-10" title="10"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -140,8 +128,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-12" title="12"
                             class="sm:w-18 max-[360px]:w-9 w-10 h-80 bg-white sm:rounded-b-2xl rounded-b-md rounded-t-xs flex justify-center items-end text-gray-950 hover:text-main pianoMainButtonShadow piano__button"
-                            onmousedown="MainButtonMousedownHandler(event)" onmouseup="MainButtonMouseupHandler(event)"
-                            onmouseleave="MainButtonMouseupHandler(event)"
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
@@ -150,9 +136,6 @@ questions.map((question) => {
                         </div>
                         <div id="${question.id}-2" title="2"
                             class="absolute top-0 max-[360px]:ml-5 ml-6 sm:ml-12.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
-                            onmousedown="PrimaryButtonMousedownHandler(event)"
-                            onmouseup="PrimaryButtonMouseupHandler(event)"
-                            onmouseleave="PrimaryButtonMouseupHandler(event)"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
@@ -160,9 +143,6 @@ questions.map((question) => {
                                 class="mb-4 text-sm sm:text-base text-center">C#\n${quizLevel == "hard" ? "(Db)" : ""}</span></div>
                         <div id="${question.id}-4" title="4"
                             class="absolute top-0 max-[360px]:ml-15 ml-17 sm:ml-31.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
-                            onmousedown="PrimaryButtonMousedownHandler(event)"
-                            onmouseup="PrimaryButtonMouseupHandler(event)"
-                            onmouseleave="PrimaryButtonMouseupHandler(event)"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
@@ -170,9 +150,6 @@ questions.map((question) => {
                                 class="mb-4 text-sm sm:text-base text-center">D#\n${quizLevel == "hard" ? "(Eb)" : ""}</span></div>
                         <div id="${question.id}-7" title="7"
                             class="absolute top-0 max-[360px]:ml-35 ml-39 sm:ml-69.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
-                            onmousedown="PrimaryButtonMousedownHandler(event)"
-                            onmouseup="PrimaryButtonMouseupHandler(event)"
-                            onmouseleave="PrimaryButtonMouseupHandler(event)"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
@@ -180,9 +157,6 @@ questions.map((question) => {
                                 class="mb-4 text-sm sm:text-base text-center">F#\n${quizLevel == "hard" ? "(Gb)" : ""}</span></div>
                         <div id="${question.id}-9" title="9"
                             class="absolute top-0 max-[360px]:ml-45 ml-50 sm:ml-88.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
-                            onmousedown="PrimaryButtonMousedownHandler(event)"
-                            onmouseup="PrimaryButtonMouseupHandler(event)"
-                            onmouseleave="PrimaryButtonMouseupHandler(event)"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
@@ -190,9 +164,6 @@ questions.map((question) => {
                                 class="mb-4 text-sm sm:text-base text-center">G#\n${quizLevel == "hard" ? "(Ab)" : ""}</span></div>
                         <div id="${question.id}-11" title="11"
                             class="absolute top-0 max-[360px]:ml-55 ml-61 sm:ml-108 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
-                            onmousedown="PrimaryButtonMousedownHandler(event)"
-                            onmouseup="PrimaryButtonMouseupHandler(event)"
-                            onmouseleave="PrimaryButtonMouseupHandler(event)"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
