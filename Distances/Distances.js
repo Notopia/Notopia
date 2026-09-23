@@ -224,7 +224,7 @@ aboutButton.onclick = function () {
 }
 // Cancel showing about box
 const footer = document.getElementById("footer");
-function CnacelShowingAboutBox() {
+function CancelShowingAboutBox() {
     if (aboutBoxShowingStatus == true) {
         aboutBox.classList.add("main__about__hide");
         aboutBox.classList.remove("main__about__show");
