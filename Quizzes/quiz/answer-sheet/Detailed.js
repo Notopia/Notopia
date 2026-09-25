@@ -272,19 +272,19 @@ if (completeResult != null) {
                         </div>
                         <div id="${question.id}-2" title="2"
                             class="absolute top-0 max-[360px]:ml-4 ml-4.5 sm:ml-11 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
-                                class="mb-4 text-sm sm:text-base">C#${quizId == 2 || quizId == 4 ? "(Db)" : ""}</span></div>
+                                class="mb-4 text-sm sm:text-base text-center">C#\n${quizId == 2 || quizId == 4 ? "(Db)" : ""}</span></div>
                         <div id="${question.id}-4" title="4"
                             class="absolute top-0 max-[360px]:ml-12.5 ml-14 sm:ml-29 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
-                                class="mb-4 text-sm sm:text-base">D#${quizId == 2 || quizId == 4 ? "(Eb)" : ""}</span></div>
+                                class="mb-4 text-sm sm:text-base text-center">D#\n${quizId == 2 || quizId == 4 ? "(Eb)" : ""}</span></div>
                         <div id="${question.id}-7" title="7"
                             class="absolute top-0 max-[360px]:ml-29.5 ml-33 sm:ml-63.5 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
-                                class="mb-4 text-sm sm:text-base">F#${quizId == 2 || quizId == 4 ? "(Gb)" : ""}</span></div>
+                                class="mb-4 text-sm sm:text-base text-center">F#\n${quizId == 2 || quizId == 4 ? "(Gb)" : ""}</span></div>
                         <div id="${question.id}-9" title="9"
                             class="absolute top-0 max-[360px]:ml-38 ml-42.5 sm:ml-81.5 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
-                                class="mb-4 text-sm sm:text-base">G#${quizId == 2 || quizId == 4 ? "(Ab)" : ""}</span></div>
+                                class="mb-4 text-sm sm:text-base text-center">G#\n${quizId == 2 || quizId == 4 ? "(Ab)" : ""}</span></div>
                         <div id="${question.id}-11" title="11"
                             class="absolute top-0 max-[360px]:ml-47 ml-52 sm:ml-99 sm:w-12 w-9 max-[360px]:w-8 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"><span
-                                class="mb-4 text-sm sm:text-base">A#${quizId == 2 || quizId == 4 ? "(Bb)" : ""}</span></div>
+                                class="mb-4 text-sm sm:text-base text-center">A#\n${quizId == 2 || quizId == 4 ? "(Bb)" : ""}</span></div>
                     </div>
                 </div>
                 <div class="w-full text-center mt-3">
