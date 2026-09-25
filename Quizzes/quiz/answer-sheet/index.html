@@ -297,7 +297,7 @@
         onclick="CloseDropdown()" id="main">
         <h1 class="text-3xl lg:text-4xl text-gray-100 lg:mt-8">پاسخنامه آزمون</h1>
         <div
-            class="xl:grid xl:grid-cols-2 xl:grid-rows-[auto_auto_1fr] lg:space-y-3 flex flex-col gap-3 items-center xl:items-start px-5 pt-6 pb-16">
+            class="xl:grid xl:grid-cols-2 xl:grid-rows-[auto_auto] lg:space-y-3 flex flex-col gap-3 items-center xl:items-start px-5 pt-6 pb-16">
             <section
                 class="w-full h-64 xl:col-start-1 xl:row-start-1 flex items-center justify-center bg-white p-4 rounded-xl box-border"
                 id="chart">
@@ -309,6 +309,14 @@
             </section>
             <section class="max-w-full w-full xl:col-start-1 xl:row-start-2" id="optional">
             </section>
+        </div>
+        <div class="gap-5 w-full xl:w-50% flex flex-col md:flex-row my-6 xl:mt-8">
+            <button
+                class="text-lg mx-auto w-fit px-4 py-2 border-2 border-gray-400 rounded-xl outline-none cursor-pointer hover:bg-gray-200 hover:scale-105 focus:ring-6 ring-offset-0 focus:border-none ring-main transition-all bg-white"
+                onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه کوییزها</button>
+            <button
+                class="text-lg mx-auto w-fit px-4 py-2 border-2 border-gray-400 rounded-xl outline-none cursor-pointer hover:bg-gray-200 hover:scale-105 focus:ring-6 ring-offset-0 focus:border-none ring-main transition-all bg-white"
+                onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه اصلی</button>
         </div>
     </main>
     <footer class="footer" onclick="CancelShowingAboutBox(), CloseDropdown()" id="footer">
