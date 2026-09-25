@@ -304,6 +304,30 @@
 .max-w-58 {
   max-width: calc(var(--spacing) * 58);
 }
+.max-w-384 {
+  max-width: calc(var(--spacing) * 384);
+}
+.max-w-\[15px\] {
+  max-width: 15px;
+}
+.max-w-\[1500px\] {
+  max-width: 1500px;
+}
+.max-w-\[1530px\] {
+  max-width: 1530px;
+}
+.max-w-\[1536px\] {
+  max-width: 1536px;
+}
+.max-w-\[1550px\] {
+  max-width: 1550px;
+}
+.max-w-\[1560px\] {
+  max-width: 1560px;
+}
+.max-w-\[1600px\] {
+  max-width: 1600px;
+}
 .max-w-full {
   max-width: 100%;
 }
