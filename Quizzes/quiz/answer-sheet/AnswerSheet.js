@@ -77,6 +77,12 @@ if (quizStatus) {
     });
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+document.querySelectorAll(".return").forEach(button => {
+    button.addEventListener("click", () => {
+        sessionStorage.clear()
+    })
+})
+//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const selectedSectionHeader = document.querySelector(".header__sections__quizzes");
 const selectedSectionDropdown = document.querySelector("#quizzesPart");
 (function () {
