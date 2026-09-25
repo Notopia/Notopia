@@ -94,8 +94,8 @@ body {
     opacity: 90%;
     scale: 0%;
     position: absolute;
-    top: 50px;
-    left: 5px;
+    top: 70px;
+    left: 10px;
     pointer-events: none;
     transition-property: opacity, scale;
     transition-timing-function: var(--default-transition-timing-function);
@@ -241,6 +241,16 @@ body {
 .showDropdown {
     opacity: 100%;
     scale: 100%;
+    pointer-events: all;
+    transition-property: opacity, scale;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: 350ms;
+    z-index: 999999;
+}
+
+.closeDropdown{
+    opacity: 0%;
+    scale: 0%;
     pointer-events: all;
     transition-property: opacity, scale;
     transition-timing-function: var(--default-transition-timing-function);

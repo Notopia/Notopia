@@ -48,21 +48,26 @@ function GoToContactPage() {
     CloseDropdown()
 }
 let dropdownShowingStatus = false;
+//*Handle dropdown
 function OpenDropdown() {
     if (!dropdownShowingStatus) {
+        document.getElementById("dropdown").classList.remove("closeDropdown");
         document.getElementById("dropdown").classList.add("showDropdown");
     }
     else if (dropdownShowingStatus) {
         document.getElementById("dropdown").classList.remove("showDropdown");
+        document.getElementById("dropdown").classList.add("closeDropdown");
     }
     dropdownShowingStatus = !dropdownShowingStatus;
 }
 function CloseDropdown() {
     if (dropdownShowingStatus) {
         document.getElementById("dropdown").classList.remove("showDropdown");
+        document.getElementById("dropdown").classList.add("closeDropdown");
         dropdownShowingStatus = !dropdownShowingStatus;
     }
 }
+//*Show loading animation when user click on navigation buttons or links
 function ChangePage() {
     loading.classList.remove("Lhidden");
     loading.classList.add("Lflex");
