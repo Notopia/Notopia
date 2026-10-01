@@ -3,36 +3,38 @@ const audios = {};
 for (let i = 1; i <= 12; i++) {
     audios[i] = new Audio(`/Audios/${i}.mp3`);
 }
-//*Handle click on mains
+//!-----------------------------------------------------------------------------------------------------------------------------------
+//*Handle effects of mains
 function MainButtonMousedownHandler(event) {
     const clickedButton = event.currentTarget;
     //*Remove shadow for click on piano button's vibe
     clickedButton.classList.remove("pianoMainButtonShadow");
-    //*Play audio when click on piano button
-    PlayAudio(clickedButton.title)
-    //*Change selected button's color
-    SelectButton(event.currentTarget.id)
 }
 function MainButtonMouseupHandler(event) {
     const clickedButton = event.currentTarget;
     //*Add removed shadow of piano button
     clickedButton.classList.add("pianoMainButtonShadow");
 }
-//*Handle click on primaries
+//*Handle effects of primaries
 function PrimaryButtonMousedownHandler(event) {
     const clickedButton = event.currentTarget;
     //*Remove shadow for click on piano button's vibe
     clickedButton.classList.remove("pianoPrimaryButtonShadow");
-    //*Play audio when click on piano button
-    PlayAudio(clickedButton.title)
-    //*Change selected button's color
-    SelectButton(event.currentTarget.id)
 }
 function PrimaryButtonMouseupHandler(event) {
     const clickedButton = event.currentTarget;
     //*Add removed shadow of piano button
     clickedButton.classList.add("pianoPrimaryButtonShadow");
 }
+//*Handle click on a button
+function PianoButtonsClickHandler(event) {
+    const clickedButton = event.currentTarget;
+    //*Play audio when click on piano button
+    PlayAudio(clickedButton.title)
+    //*Change selected button's color
+    SelectButton(event.currentTarget.id)
+}
+//!-----------------------------------------------------------------------------------------------------------------------------------
 //*Play audio function
 function PlayAudio(id) {
     audios[id].currentTime = 0;
@@ -47,7 +49,8 @@ function SelectButton(selectedButtonId) {
     selectedButton.classList.remove("bg-white", "text-white", "bg-neutral-950", "hover:text-main")
     selectedButton.classList.add("bg-main", "text-gray-950", "hover:text-white")
 }
-function UnSelectButtons(questionId){
+//*Unselect piano buttons
+function UnSelectButtons(questionId) {
     //*Change color and etc of piano buttons
     const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     ids.map((id) => {

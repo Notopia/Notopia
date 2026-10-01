@@ -83,7 +83,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">C</span>
                         </div>
                         <div id="${question.id}-3" title="3"
@@ -91,7 +92,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">D</span>
                         </div>
                         <div id="${question.id}-5" title="5"
@@ -99,7 +101,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">E</span>
                         </div>
                         <div id="${question.id}-6" title="6"
@@ -107,7 +110,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">F</span>
                         </div>
                         <div id="${question.id}-8" title="8"
@@ -115,7 +119,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">G</span>
                         </div>
                         <div id="${question.id}-10" title="10"
@@ -123,7 +128,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">A</span>
                         </div>
                         <div id="${question.id}-12" title="12"
@@ -131,7 +137,8 @@ questions.map((question) => {
                             onpointerdown="MainButtonMousedownHandler(event)"
                             onpointerup="MainButtonMouseupHandler(event)"
                             onpointerleave="MainButtonMouseupHandler(event)"
-                            onpointercancel="MainButtonMouseupHandler(event)"><span
+                            onpointercancel="MainButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base">B</span>
                         </div>
                         <div id="${question.id}-2" title="2"
@@ -139,35 +146,40 @@ questions.map((question) => {
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
-                            onpointercancel="PrimaryButtonMouseupHandler(event)"><span
+                            onpointercancel="PrimaryButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base text-center">C#\n${quizLevel == "hard" ? "(Db)" : ""}</span></div>
                         <div id="${question.id}-4" title="4"
                             class="absolute top-0 max-[360px]:ml-15 ml-17 sm:ml-31.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
-                            onpointercancel="PrimaryButtonMouseupHandler(event)"><span
+                            onpointercancel="PrimaryButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base text-center">D#\n${quizLevel == "hard" ? "(Eb)" : ""}</span></div>
                         <div id="${question.id}-7" title="7"
                             class="absolute top-0 max-[360px]:ml-35 ml-39 sm:ml-69.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
-                            onpointercancel="PrimaryButtonMouseupHandler(event)"><span
+                            onpointercancel="PrimaryButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base text-center">F#\n${quizLevel == "hard" ? "(Gb)" : ""}</span></div>
                         <div id="${question.id}-9" title="9"
                             class="absolute top-0 max-[360px]:ml-45 ml-50 sm:ml-88.5 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
-                            onpointercancel="PrimaryButtonMouseupHandler(event)"><span
+                            onpointercancel="PrimaryButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base text-center">G#\n${quizLevel == "hard" ? "(Ab)" : ""}</span></div>
                         <div id="${question.id}-11" title="11"
                             class="absolute top-0 max-[360px]:ml-55 ml-61 sm:ml-108 sm:w-12 w-9 h-45 bg-neutral-950 rounded-b-md flex justify-center items-end text-gray-200 hover:text-main rounded-t-xs pianoPrimaryButtonShadow piano__button"
                             onpointerdown="PrimaryButtonMousedownHandler(event)"
                             onpointerup="PrimaryButtonMouseupHandler(event)"
                             onpointerleave="PrimaryButtonMouseupHandler(event)"
-                            onpointercancel="PrimaryButtonMouseupHandler(event)"><span
+                            onpointercancel="PrimaryButtonMouseupHandler(event)"
+                            onclick="PianoButtonsClickHandler(event)"><span
                                 class="mb-4 text-sm sm:text-base text-center">A#\n${quizLevel == "hard" ? "(Bb)" : ""}</span></div>
                     </div>
                 </div>
