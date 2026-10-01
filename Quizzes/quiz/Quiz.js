@@ -34,7 +34,7 @@ switch (quizId) {
         window.location.href = "/404.html"
 }
 //*Fill answers array with 0
-const answers = []
+export const answers = []
 for (let i = 0; i < numberOfQuestions; i++) {
     answers.push(0)
 }
@@ -111,7 +111,7 @@ document.getElementById("submit").addEventListener("click", (event) => {
     const userDecide = confirm("آیا می‌خواهید پاسخ‌های خود را ثبت نمایید؟")
     if (userDecide) {
         sessionStorage.setItem("quizAnswers", JSON.stringify(answers))
-        sessionStorage.setItem("quizId",quizId)
+        sessionStorage.setItem("quizId", quizId)
         window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
     }
 })

@@ -2,6 +2,7 @@ import { DistancesEasy } from "../Questions/DistancesEasy.js"
 import { DistancesHard } from "../Questions/DistancesHard.js"
 import { StepsEasy } from "../Questions/StepsEasy.js"
 import { StepsHard } from "../Questions/StepsHard.js"
+import { answers } from "./Quiz.js"
 
 //*Select timer DOM
 const min = document.getElementById("min")
@@ -32,11 +33,15 @@ let m = quizTime / 60
 let s = quizTime % 60
 min.innerHTML = m.toString().padStart(2, "0")
 sec.innerHTML = s.toString().padStart(2, "0")
+//*Get answer for save data sessionStorage when it was over
+const userAnswers = answers
 function TimerTick() {
     s -= 1
     if (s == 0 && m == 0) {
         alert("زمان شما به پایان رسید.")
-        window.location.replace("/Quizzes/quiz/answer-sheet/")
+        sessionStorage.setItem("quizAnswers", JSON.stringify(userAnswers))
+        sessionStorage.setItem("quizId", quizId)
+        window.location.replace(`/Quizzes/quiz/answer-sheet?id=${quizId}`)
     }
     else if (s == -1) {
         m -= 1
