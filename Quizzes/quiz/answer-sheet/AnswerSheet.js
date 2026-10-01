@@ -42,7 +42,7 @@ if (!userAnswers || quizId != savedQuizId) {
         <div class="gap-5 w-full mt-8 flex flex-col md:flex-row mb-34">
             <button
                 class="text-lg mx-auto w-fit px-4 py-2 border-2 border-gray-400 rounded-xl outline-none cursor-pointer hover:bg-gray-200 hover:scale-105 focus:ring-6 ring-offset-0 focus:border-none ring-main transition-all bg-white"
-                onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه کوییزها</button>
+                onclick="GoToQuizzesPage(), ChangePage()">بازگشت به صفحه کوییزها</button>
             <button
                 class="text-lg mx-auto w-fit px-4 py-2 border-2 border-gray-400 rounded-xl outline-none cursor-pointer hover:bg-gray-200 hover:scale-105 focus:ring-6 ring-offset-0 focus:border-none ring-main transition-all bg-white"
                 onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه اصلی</button>
