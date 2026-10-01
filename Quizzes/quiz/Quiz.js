@@ -107,7 +107,8 @@ function SetRemoveAnswerButtonStatus(questionId, newStatus) {
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Handle click on register answers button
-document.getElementById("submit").addEventListener("click", (event) => {
+const submitButton = document.getElementById("submit")
+submitButton.addEventListener("click", (event) => {
     const userDecide = confirm("آیا می‌خواهید پاسخ‌های خود را ثبت نمایید؟")
     if (userDecide) {
         sessionStorage.setItem("quizAnswers", JSON.stringify(answers))

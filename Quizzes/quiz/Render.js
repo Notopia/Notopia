@@ -193,4 +193,4 @@ questions.map((question) => {
 })
 //*Add articles to main tag
 const main = document.querySelector("main")
-main.innerHTML += DOM
+main.insertAdjacentHTML("beforeend", DOM)
