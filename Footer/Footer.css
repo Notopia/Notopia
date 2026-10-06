@@ -101,7 +101,7 @@
     direction: rtl;
     padding-bottom: 3vh;
     color: white;
-    font-size: 1vw;
+    font-size: 14px;
 }
 
 @media(max-width:400px) {
