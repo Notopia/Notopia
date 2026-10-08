@@ -293,10 +293,150 @@
             </a>
         </div>
     </div>
-    <main class="w-full flex-1 flex flex-col justify-center items-center bg-[#141414]" onclick="CloseDropdown()">
+    <main class="w-full flex-1 flex flex-col justify-center items-center bg-[#141414] relative"
+        onclick="CloseDropdown()">
         <h1
             class="bg-linear-to-r from-main to-[#ffe1ae] bg-clip-text py-14 sm:py-6 text-6xl md:text-7xl lg:text-8xl font-extrabold text-transparent">
             پیانو</h1>
+        <section dir="rtl" class="lg:block hidden absolute right-5 top-6 px-4 pt-2 pb-4 bg-white space-y-2 rounded-2xl">
+            <div class="flex items-center gap-1 m-0">
+                <span>استفاده از کیبورد</span>
+                <span id="dropdownIcon" class="mt-1.5">
+                    <svg width="16px" height="16px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z"
+                                fill="#000000"></path>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+            <div dir="rtl" class="mt-2">
+                <div class="space-x-6 mb-2">
+                    <span>کلید میانبر</span>
+                    <span>کلاویه پیانو</span>
+                </div>
+                <div class="flex gap-6">
+                    <div class="w-1/2 flex flex-col items-center gap-2 text-white">
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">A</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">W</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">S</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">E</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">D</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">F</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">T</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">G</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">Y</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">H</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">U</span>
+                        <span
+                            class="w-6 h-7 bg-neutral-950 flex items-center justify-center rounded-md font-mono">J</span>
+                    </div>
+                    <div class="w-1/2 flex flex-col items-center gap-2">
+                        <span class="h-7 flex justify-center items-center">C</span>
+                        <span class="h-7 flex justify-center items-center">#C</span>
+                        <span class="h-7 flex justify-center items-center">D</span>
+                        <span class="h-7 flex justify-center items-center">#D</span>
+                        <span class="h-7 flex justify-center items-center">E</span>
+                        <span class="h-7 flex justify-center items-center">F</span>
+                        <span class="h-7 flex justify-center items-center">#F</span>
+                        <span class="h-7 flex justify-center items-center">G</span>
+                        <span class="h-7 flex justify-center items-center">#G</span>
+                        <span class="h-7 flex justify-center items-center">A</span>
+                        <span class="h-7 flex justify-center items-center">#A</span>
+                        <span class="h-7 flex justify-center items-center">B</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">A</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">C</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">W</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">#C</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">S</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">D</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">E</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">#D</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">D</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">E</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">F</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">F</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">T</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">#F</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">G</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">G</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">Y</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">#G</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">H</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">A</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">U</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">#A</span></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center justify-center"><span
+                                class="w-6 h-7 bg-neutral-950 flex items-center justify-center text-white font-mono rounded-md">J</span>
+                        </div>
+                        <div class="flex items-center justify-center"><span class="w-fit">B</span></div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
         <section class="pb-40 sm:pb-24 w-full flex justify-center items-center">
             <div class="flex gap-1 relative">
                 <div id="1"
