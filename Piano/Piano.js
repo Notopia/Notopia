@@ -31,10 +31,10 @@ function PlayAudio(id) {
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //*Handle keydown in piano page
 function KeyDownHandler(event) {
-    const keyId = ["a|1", "w|2", "s|3", "e|4", "d|5", "f|6", "t|7", "g|8", "y|9", "h|10", "u|11", "j|12"]
+    const keyId = ["A|1", "W|2", "S|3", "E|4", "D|5", "F|6", "T|7", "G|8", "Y|9", "H|10", "U|11", "J|12"]
     for (let i = 0; i <= 11; i++) {
         const [key, id] = keyId[i].split('|')
-        if (event.key == key || event.key.toLowerCase() == key) {
+        if (event.code == `Key${key}`) {
             PlayAudio(id)
         }
     }
