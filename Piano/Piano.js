@@ -40,6 +40,23 @@ function KeyDownHandler(event) {
     }
 }
 //!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//*Handle toggle dropdown
+let dropdownStatus = false
+function dropdownHandle() {
+    const dropdown = document.getElementById("shortcutsDropdown")
+    const dropdownIcon = document.getElementById("shortcutsDropdownIcon")
+    if (!dropdownStatus) {
+        dropdown.classList.remove("grid-rows-[0fr]")
+        dropdown.classList.add("grid-rows-[1fr]")
+    }
+    else {
+        dropdown.classList.remove("grid-rows-[1fr]")
+        dropdown.classList.add("grid-rows-[0fr]")
+    }
+    dropdownIcon.classList.toggle("rotate-180")
+    dropdownStatus = !dropdownStatus
+}
+//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const selectedSectionHeader = document.querySelector(".header__sections__piano");
 const selectedSectionDropdown = document.querySelector("#pianoPart");
 (function () {
