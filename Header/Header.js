@@ -35,6 +35,12 @@ function GoToPianoPage() {
     }, 1000)
     CloseDropdown()
 }
+function GoToGetStartedPage() {
+    setTimeout(() => {
+        window.location.href = '/get-started/'
+    }, 1000)
+    CloseDropdown()
+}
 function GoToHomePage() {
     setTimeout(() => {
         window.location.href = '/'

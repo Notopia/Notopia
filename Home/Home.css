@@ -28,6 +28,7 @@ body {
     justify-content: center;
     direction: rtl;
     height: 20vh;
+    max-height: 140px;
     margin-left: 1.5vw;
 }
 
@@ -64,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 18vh;
+    margin-top: 8vh;
 }
 
 #icon {
@@ -74,6 +75,9 @@ body {
 .main__welcome__parts {
     margin-top: 10vh;
     display: flex;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .main__welcome__parts__distances {
