@@ -1,7 +1,7 @@
 export const DOMs = [
     `<div class="w-full mt-24">
                 <div dir="rtl" class="leading-7 mx-auto px-3 space-y-8">
-                    <div class="bg-white px-2 md:px-4 lg:px-8 py-3 md:py-6 rounded-xl flex flex-col gap-1 md:gap-2 sm:w-110 lg:w-140">
+                    <div class="bg-white mx-auto px-2 md:px-4 lg:px-8 py-3 md:py-6 rounded-xl flex flex-col gap-1 md:gap-2 sm:w-110 lg:w-140">
                         <h2 class="text-center font-bold text-xl md:text-2xl">به نوتوپیا خوش آمدی</h2>
                         <p class="m-0 lg:text-lg">اینجا قرار است دنیای موسیقی را به شیوه خودت کشف کنی.</p>
                         <p class="m-0 lg:text-lg">فرقی نمی‌کند تازه شروع کرده باشی یا سال‌ها موسیقی کار کرده باشی؛ نوتوپیا به تو
