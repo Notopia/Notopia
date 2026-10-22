@@ -17,7 +17,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="flex flex-col gap-6 py-8 w-full">
+    `<div class="flex flex-col gap-6 py-8 mt-16 w-full sm:w-110 lg:w-140 mx-auto">
                 <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                     <div class="font-bold">
                         سوال
@@ -45,10 +45,10 @@ export const DOMs = [
                 </section>
                 <section class="mx-6 flex justify-between">
                     <button
-                        class="text-lg lg:text-xl w-18 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                        class="text-lg lg:text-xl w-18 md:w-20 lg:w-24 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
                         id="2-1">قبلی</button>
                     <button
-                        class="text-lg lg:text-xl w-18 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                        class="text-lg lg:text-xl w-18 md:w-20 lg:w-24 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
                         id="2-3">بعدی</button>
                 </section>
             </div>`
