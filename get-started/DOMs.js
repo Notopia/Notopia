@@ -46,9 +46,6 @@ export const DOMs = [
                 <section class="mx-6 flex justify-between">
                     <button
                         class="text-lg lg:text-xl w-18 md:w-20 lg:w-24 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
-                        id="2-1">قبلی</button>
-                    <button
-                        class="text-lg lg:text-xl w-18 md:w-20 lg:w-24 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
                         id="2-3">بعدی</button>
                 </section>
             </div>`
