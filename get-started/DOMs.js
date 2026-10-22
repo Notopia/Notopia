@@ -11,8 +11,8 @@ export const DOMs = [
                     </div>
                     <div class="text-center">
                         <button
-                            class="text-lg lg:text-xl px-3 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main"
-                            id="1to2">بزن بریم!</button>
+                            class="text-lg lg:text-xl px-3 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                            id="1-2">بزن بریم!</button>
                     </div>
                 </div>
             </div>`
@@ -45,9 +45,11 @@ export const DOMs = [
                 </section>
                 <section class="mx-6 flex justify-between">
                     <button
-                        class="text-lg lg:text-xl w-18 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main">قبلی</button>
+                        class="text-lg lg:text-xl w-18 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                        id="2-1">قبلی</button>
                     <button
-                        class="text-lg lg:text-xl w-18 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main">بعدی</button>
+                        class="text-lg lg:text-xl w-18 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                        id="2-3">بعدی</button>
                 </section>
             </div>`
 ]
