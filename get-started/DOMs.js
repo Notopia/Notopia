@@ -226,4 +226,78 @@ export const DOMs = [
                     </section>
                 </div>
             </div>`
+    ,
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-8">
+                <div class="flex flex-col gap-4 py-8">
+                    <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
+                        <div class="font-bold">
+                            سوال
+                        </div>
+                        <div dir="rtl" class="">
+                            <span id="currentQuestion">5</span>
+                            <span>از</span>
+                            <span>5</span>
+                        </div>
+                    </section>
+                    <section class="mx-2">
+                        <div class="bg-white max-w-full rounded-xl px-6 py-4 space-y-6">
+                            <div dir="rtl" class="px-3 sm:px-5 flex flex-col text-[15.5px] font-semibold md:text-lg">
+                                <span>
+                                    هدف اصلی تو از استفاده از نوتوپیا چیست؟
+                                </span>
+                                <span>
+                                    (می‌توانید چند گزینه انتخاب کنید.)
+                                </span>
+                            </div>
+                            <div dir="rtl"
+                                class="w-full grid grid-cols-1 space-y-4 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+                                <label class="flex gap-0.5 items-center">
+                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <div>
+                                        یادگیری تئوری موسیقی از پایه
+                                    </div>
+                                </label>
+                                <label class="flex gap-0.5 items-center">
+                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <div>
+                                        یادگیری گام‌های موسیقی
+                                    </div>
+                                </label>
+                                <label class="flex gap-0.5 items-center">
+                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <div>
+                                        یادگیری فواصل موسیقی
+                                    </div>
+                                </label>
+                                <label class="flex gap-0.5 items-center">
+                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <div>
+                                        یادگیری مباحث اولیه هارمونی
+                                    </div>
+                                </label>
+                                <label class="flex gap-0.5 items-center">
+                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <div>
+                                        افزایش دانش موسیقی
+                                    </div>
+                                </label>
+                                <label class="flex gap-0.5 items-center">
+                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <div>
+                                        هنوز نمی‌دانم؛ می‌خواهم موضوعات مختلف را امتحان کنم.
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mx-6 flex justify-between">
+                        <button
+                            class="text-lg lg:text-xl w-32 md:w-34 lg:w-38 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main"
+                            id="end">شروع یادگیری</button>
+                        <button
+                            class="text-lg lg:text-xl w-18 md:w-20 lg:w-24 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                            id="6-5">قبلی</button>
+                    </section>
+                </div>
+            </div>`
 ]
