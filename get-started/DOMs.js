@@ -11,13 +11,13 @@ export const DOMs = [
                     </div>
                     <div class="text-center">
                         <button
-                            class="text-lg lg:text-xl px-3 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-34 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                            class="text-lg lg:text-xl px-3 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-20 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
                             id="1-2">بزن بریم!</button>
                     </div>
                 </div>
             </div>`
     ,
-    `<div class="flex flex-col gap-6 py-8 mt-6 w-full sm:w-110 lg:w-140 mx-auto">
+    `<div class="flex flex-col gap-6 py-8 w-full sm:w-110 lg:w-140 mx-auto">
                 <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                     <div class="font-bold">
                         سوال
@@ -50,7 +50,7 @@ export const DOMs = [
                 </section>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-20">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-4">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -109,7 +109,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-20">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-6">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -168,7 +168,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-20">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-6">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -227,7 +227,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-8">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto -mt-2">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
