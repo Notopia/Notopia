@@ -252,37 +252,43 @@ export const DOMs = [
                             <div dir="rtl"
                                 class="w-full grid grid-cols-1 space-y-4 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="1"
+                                        class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری تئوری موسیقی از پایه
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="2"
+                                        class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری گام‌های موسیقی
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="3"
+                                        class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری فواصل موسیقی
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="4"
+                                        class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری مباحث اولیه هارمونی
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="5"
+                                        class="w-fit h-fit mb-1 option">
                                     <div>
                                         افزایش دانش موسیقی
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="checkbox" class="w-fit h-fit mb-1">
+                                    <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="6"
+                                        class="w-fit h-fit mb-1 option">
                                     <div>
                                         هنوز نمی‌دانم؛ می‌خواهم موضوعات مختلف را امتحان کنم.
                                     </div>
