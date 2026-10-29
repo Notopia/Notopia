@@ -36,7 +36,7 @@ export const DOMs = [
                             </span>
                         </div>
                         <div class="flex flex-col items-center gap-2">
-                            <input dir="rtl" type="text"
+                            <input dir="rtl" type="text" id="nameInput"
                                 class="py-1 px-2 rounded-xl text-[16px] outline-none w-2/3 border-2 border-gray-500 focus:border-main focus:border-4 transition-all duration-100"
                                 placeholder="علی اکبری">
                             <p class="m-0 text-xs text-neutral-800">می‌توانید بدون وارد کردن نام ادامه دهید.</p>
