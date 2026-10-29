@@ -33,13 +33,15 @@ function SetAddEventListeners() {
             }
             //*Navigate user to new step if user selected an option 
             if (isUserSelect) {
-                //*Set answer if user clicked on next step button
-                if (nextStep > currentStep)
+                //*Set answer if user didn't click on 6 to 5 step button
+                if (button.id != "6-5")
                     SetAnswers()
                 //*Set step
                 step = Number(nextStep)
                 //*Set DOM for new step
                 SetDOM()
+                //*Set previous answer if it exists
+                SetPreviousAnswer()
             }
             //*Show require text to user if user didn't selected an option
             else {
@@ -52,12 +54,12 @@ function SetAddEventListeners() {
 //*Save data in an array
 const answers = ["", "", "", "", ""]
 function SetAnswers() {
+    const options = document.querySelectorAll("input")
     if (step == 2) {
         const userName = document.getElementById("nameInput").value
         answers[0] = userName
     }
     else if (step == 6) {
-        const options = document.querySelectorAll("input")
         let selectedOptions = ""
         for (let i = 0; i < 6; i++) {
             if (options[i].checked) {
@@ -68,8 +70,7 @@ function SetAnswers() {
         //*Save data in localStorage
         SaveInLocalstoarge()
     }
-    else if (step > 2) {
-        const options = document.querySelectorAll("input")
+    else if (step > 2 && step < 6) {
         for (let i = 0; i < 4; i++) {
             if (options[i].checked) {
                 answers[step - 2] = (i + 1).toString()
@@ -83,4 +84,23 @@ function SaveInLocalstoarge() {
     const userLevel = answers.slice(1, 5)
     localStorage.setItem("userName", userName)
     localStorage.setItem("userLevel", userLevel)
+}
+//!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//*Show selected option if user already selected a answer of question
+function SetPreviousAnswer() {
+    if (answers[step - 2] != "") {
+        const options = document.querySelectorAll("input")
+        if (step == 2) {
+            const input = document.getElementById("nameInput")
+            input.value = answers[0]
+        }
+        else if (step == 6) {
+            for (let i = 0; i < answers[4].length; i++) {
+                options[Number(answers[4][i]) - 1].checked = true
+            }
+        }
+        else if (step > 2 && step < 6) {
+            options[Number(answers[step - 2]) - 1].checked = true
+        }
+    }
 }
