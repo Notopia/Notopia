@@ -15,9 +15,28 @@ function SetAddEventListeners() {
     const navigationButtons = document.querySelectorAll(".navigation")
     navigationButtons.forEach(button => {
         button.addEventListener("click", () => {
+            let isUserSelect = false
             const [currentStep, nextStep] = button.id.split('-')
-            step = Number(nextStep)
-            SetDOM()
+            const requireLabel = document.getElementById("requireLabel")
+            if (step > 2 && nextStep > currentStep) {
+                const inputs = document.querySelectorAll("input")
+                inputs.forEach(input => {
+                    console.log(input.checked)
+                    if (input.checked) {
+                        isUserSelect = true
+                    }
+                });
+            }
+            else {
+                isUserSelect = true
+            }
+            if (isUserSelect) {
+                step = Number(nextStep)
+                SetDOM()
+            }
+            else {
+                requireLabel.classList.remove("hidden")
+            }
         })
     })
 }

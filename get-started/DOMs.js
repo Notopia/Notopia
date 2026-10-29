@@ -50,7 +50,7 @@ export const DOMs = [
                 </section>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-4">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -70,31 +70,32 @@ export const DOMs = [
                                 </span>
                             </div>
                             <div dir="rtl"
-                                class="w-full grid grid-cols-1 space-y-4 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                class="w-full grid grid-cols-1 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-2" class="w-fit h-fit mb-1">
                                     <div>
                                         تقریباً هیچ چیزی درباره نت‌ها نمی‌دانم.
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-2" class="w-fit h-fit mb-1">
                                     <div>
                                         نام نت‌ها را می‌دانم، اما نمی‌توانم خیلی خوب از آن‌ها استفاده کنم.
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-2" class="w-fit h-fit mb-1">
                                     <div>
                                         نت‌ها را می‌شناسم و می‌توانم بعضی تمرین‌های نت‌خوانی را حل کنم.
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                    <input type="radio" name="question-2" class="w-fit h-fit mb-1">
                                     <div>
                                         در نت‌خوانی مهارت دارم و می‌توانم تمرین‌های دشوارتر را هم انجام دهم.
                                     </div>
                                 </label>
+                                <p dir="rtl" id="requireLabel" class="text-red-600 text-xs sm:text-sm mr-3 hidden">لطفا یکی از گزینه‌ها را انتخاب کنید.</p>
                             </div>
                         </div>
                     </section>
@@ -109,7 +110,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-6">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -129,31 +130,32 @@ export const DOMs = [
                                 </span>
                             </div>
                             <div dir="rtl"
-                                class="w-full grid grid-cols-1 space-y-4 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                class="w-full grid grid-cols-1 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-3" class="w-fit h-fit mb-1">
                                     <div>
                                         نمی‌دانم گام موسیقی چیست.
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-3" class="w-fit h-fit mb-1">
                                     <div>
                                        نام گام‌های ماژور و مینور را شنیده‌ام.
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-3" class="w-fit h-fit mb-1">
                                     <div>
                                         می‌توانم گام‌های ساده را تشکیل دهم.
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                    <input type="radio" name="question-3" class="w-fit h-fit mb-1">
                                     <div>
                                        می‌توانم گام‌های مختلف را تشکیل دهم و ساختار آن‌ها را تحلیل کنم.
                                     </div>
                                 </label>
+                                <p dir="rtl" id="requireLabel" class="text-red-600 text-xs sm:text-sm mr-3 hidden">لطفا یکی از گزینه‌ها را انتخاب کنید.</p>
                             </div>
                         </div>
                     </section>
@@ -168,7 +170,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto mt-6">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -188,31 +190,32 @@ export const DOMs = [
                                 </span>
                             </div>
                             <div dir="rtl"
-                                class="w-full grid grid-cols-1 space-y-4 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                class="w-full grid grid-cols-1 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-4" class="w-fit h-fit mb-1">
                                     <div>
                                         هنوز مفهوم فاصله موسیقی را نمی‌دانم.
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-4" class="w-fit h-fit mb-1">
                                     <div>
                                         مفهوم فاصله را شنیده‌ام، اما محاسبه آن برایم دشوار است.
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                <label class="flex gap-0.5 items-center mb-3">
+                                    <input type="radio" name="question-4" class="w-fit h-fit mb-1">
                                     <div>
                                         می‌توانم فاصله‌های معمول را محاسبه کنم.
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
-                                    <input type="radio" name="question-1" class="w-fit h-fit mb-1">
+                                    <input type="radio" name="question-4" class="w-fit h-fit mb-1">
                                     <div>
                                        می‌توانم فاصله‌های مختلف را محاسبه و تحلیل کنم.
                                     </div>
                                 </label>
+                                <p dir="rtl" id="requireLabel" class="text-red-600 text-xs sm:text-sm mr-3 hidden">لطفا یکی از گزینه‌ها را انتخاب کنید.</p>
                             </div>
                         </div>
                     </section>
@@ -227,7 +230,7 @@ export const DOMs = [
                 </div>
             </div>`
     ,
-    `<div class="w-full sm:w-110 lg:w-140 mx-auto -mt-2">
+    `<div class="w-full sm:w-110 lg:w-140 mx-auto -mt-6">
                 <div class="flex flex-col gap-4 py-8">
                     <section dir="rtl" class="flex text-white gap-2 text-xl mr-4">
                         <div class="font-bold">
@@ -250,36 +253,36 @@ export const DOMs = [
                                 </span>
                             </div>
                             <div dir="rtl"
-                                class="w-full grid grid-cols-1 space-y-4 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
-                                <label class="flex gap-0.5 items-center">
+                                class="w-full grid grid-cols-1 text-base xl:text-lg mt-3 sm:mt-5 xl:mt-7">
+                                <label class="flex gap-0.5 items-center mb-3">
                                     <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="1"
                                         class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری تئوری موسیقی از پایه
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
+                                <label class="flex gap-0.5 items-center mb-3">
                                     <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="2"
                                         class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری گام‌های موسیقی
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
+                                <label class="flex gap-0.5 items-center mb-3">
                                     <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="3"
                                         class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری فواصل موسیقی
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
+                                <label class="flex gap-0.5 items-center mb-3">
                                     <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="4"
                                         class="w-fit h-fit mb-1 option">
                                     <div>
                                         یادگیری مباحث اولیه هارمونی
                                     </div>
                                 </label>
-                                <label class="flex gap-0.5 items-center">
+                                <label class="flex gap-0.5 items-center mb-3">
                                     <input type="checkbox" onchange="CheckQ5Inputs(event)" data-option="5"
                                         class="w-fit h-fit mb-1 option">
                                     <div>
@@ -293,13 +296,14 @@ export const DOMs = [
                                         هنوز نمی‌دانم؛ می‌خواهم موضوعات مختلف را امتحان کنم.
                                     </div>
                                 </label>
+                                <p dir="rtl" id="requireLabel" class="text-red-600 text-xs sm:text-sm mr-3 hidden">لطفا یکی از گزینه‌ها را انتخاب کنید.</p>
                             </div>
                         </div>
                     </section>
                     <section class="mx-6 flex justify-between">
                         <button
-                            class="text-lg lg:text-xl w-32 md:w-34 lg:w-38 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main"
-                            id="end">شروع یادگیری</button>
+                            class="text-lg lg:text-xl w-32 md:w-34 lg:w-38 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
+                            id="6-7">دیدن نتایج</button>
                         <button
                             class="text-lg lg:text-xl w-18 md:w-20 lg:w-24 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main navigation"
                             id="6-5">قبلی</button>
