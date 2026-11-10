@@ -146,7 +146,7 @@ export const DOMs = [
                                 <label class="flex gap-0.5 items-center mb-3">
                                     <input type="radio" name="question-3" class="w-fit h-fit mb-1">
                                     <div>
-                                        می‌توانم گام‌های ساده را تشکیل دهم.
+                                        می‌توانم گام‌های ساده را تشخیص دهم.
                                     </div>
                                 </label>
                                 <label class="flex gap-0.5 items-center">
