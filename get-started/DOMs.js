@@ -310,4 +310,36 @@ export const DOMs = [
                     </section>
                 </div>
             </div>`
+    , `<div class="w-full mt-24">
+                <div dir="rtl" class="leading-7 mx-auto px-3 space-y-8">
+                    <div
+                        class="bg-white mx-auto px-2 md:px-4 lg:px-8 py-3 md:py-6 rounded-xl flex flex-col gap-1 md:gap-2 sm:w-110 lg:w-140">
+                        <section>
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-base font-bold">سطح دانش تئوری موسیقی شما:</h2>
+                                <div class="text-sm font-light">
+                                    <span id="percent">00</span>
+                                    <span>از</span>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-col items-center gap-1">
+                                <div dir="ltr" class="w-11/12 bg-gray-200 h-6 rounded-full" id="progress"></div>
+                                <div
+                                    class="w-11/12 flex flex-row-reverse justify-between items-center text-xs font-light">
+                                    <span>0%</span>
+                                    <span>50%</span>
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </section>
+                        <section></section>
+                    </div>
+                    <div class="text-center">
+                        <button
+                            class="text-lg lg:text-xl px-3 sm:px-5 md:px-8 lg:px-8 py-1 md:py-1.5 border-2 ring-white rounded-xl md:rounded-2xl outline-none mb-20 cursor-pointer hover:scale-105 ring-2 focus:ring-6 ring-offset-0 border-none transition-all bg-main"
+                            onclick="GoToHomePage(), ChangePage()">بازگشت به صفحه اصلی</button>
+                    </div>
+                </div>
+            </div>`
 ]
